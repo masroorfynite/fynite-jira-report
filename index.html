@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="3600">
+<title>FBR Daily Report — live</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Arial, sans-serif; max-width: 860px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; background: #fff; }
+  h1 { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+  .date { color: #666; font-size: 14px; margin-bottom: 28px; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 12px; }
+  .stat { background: #f5f5f4; border-radius: 8px; padding: 14px; }
+  .stat-label { font-size: 12px; color: #666; margin-bottom: 4px; }
+  .stat-value { font-size: 22px; font-weight: 600; }
+  .stat-value.alert { color: #c0392b; }
+  .stat-value.ok { color: #1e7e34; }
+  h2 { font-size: 16px; font-weight: 600; margin: 32px 0 14px; border-bottom: 1px solid #e5e5e3; padding-bottom: 6px; }
+  .bar-row { display: flex; align-items: center; margin-bottom: 10px; font-size: 13px; }
+  .bar-label { width: 150px; flex-shrink: 0; color: #333; }
+  .bar-track { flex: 1; background: #eeeeec; border-radius: 4px; height: 20px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 8px; box-sizing: border-box; color: #fff; font-size: 11px; font-weight: 600; }
+  .bar-count { width: 40px; text-align: right; color: #666; font-size: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 10px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #eee; }
+  th { color: #666; text-transform: uppercase; font-size: 11px; }
+  a { color: #1a56db; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e5e5e3; font-size: 12px; color: #999; }
+</style>
+</head>
+<body>
+  <h1>Daily Jira report — Fynite Bug Report (FBR)</h1>
+  <div class="date">Live, auto-refreshing hourly &middot; Last updated July 27, 2026 22:02 UTC &middot; Excludes project FSV</div>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-label">Open 14+ days</div><div class="stat-value alert">23</div></div>
+    <div class="stat"><div class="stat-label">Total open backlog</div><div class="stat-value">66</div></div>
+    <div class="stat"><div class="stat-label">In Progress (all)</div><div class="stat-value">8</div></div>
+    <div class="stat"><div class="stat-label">Created today</div><div class="stat-value">9</div></div>
+    <div class="stat"><div class="stat-label">Marked Done today</div><div class="stat-value ok">10</div></div>
+    <div class="stat"><div class="stat-label">Resolved last 7 days</div><div class="stat-value ok">95</div></div>
+  </div>
+
+  <h2>Stale backlog by assignee (23 total)</h2>
+  
+    <div class="bar-row">
+      <div class="bar-label">Mohsin Shakeel</div>
+      <div class="bar-track"><div class="bar-fill" style="width:22%;background:#c0392b;">22%</div></div>
+      <div class="bar-count">5</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Sidra Sial</div>
+      <div class="bar-track"><div class="bar-fill" style="width:22%;background:#c0392b;">22%</div></div>
+      <div class="bar-count">5</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">sehaj.pal</div>
+      <div class="bar-track"><div class="bar-fill" style="width:17%;background:#d97706;">17%</div></div>
+      <div class="bar-count">4</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">rohit.sharma</div>
+      <div class="bar-track"><div class="bar-fill" style="width:13%;background:#6b7280;">13%</div></div>
+      <div class="bar-count">3</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Haider Shah</div>
+      <div class="bar-track"><div class="bar-fill" style="width:9%;background:#6b7280;">9%</div></div>
+      <div class="bar-count">2</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Uzair Mansoor</div>
+      <div class="bar-track"><div class="bar-fill" style="width:4%;background:#6b7280;">4%</div></div>
+      <div class="bar-count">1</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Sarmed Ahmed</div>
+      <div class="bar-track"><div class="bar-fill" style="width:4%;background:#6b7280;">4%</div></div>
+      <div class="bar-count">1</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Raaz M</div>
+      <div class="bar-track"><div class="bar-fill" style="width:4%;background:#6b7280;">4%</div></div>
+      <div class="bar-count">1</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Sakhti S</div>
+      <div class="bar-track"><div class="bar-fill" style="width:4%;background:#6b7280;">4%</div></div>
+      <div class="bar-count">1</div>
+    </div>
+
+  <h2>Stale ticket detail</h2>
+  <table>
+    <thead><tr><th>Key</th><th>Summary</th><th>Assignee</th><th>Priority</th><th>Status</th><th>Days Open</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-13">FBR-13</a></td>
+        <td>Move away from key base authentication to qualify for Azure credit</td>
+        <td>Haider Shah</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>119</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-58">FBR-58</a></td>
+        <td>Enforce email verification before granting access to launchpad</td>
+        <td>rohit.sharma</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-62">FBR-62</a></td>
+        <td>Investigate convoAI webscraping failure despite Succeeded workflow status</td>
+        <td>Haider Shah</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-102">FBR-102</a></td>
+        <td>Remediate 42 AWS Security Benchmark failures</td>
+        <td>Uzair Mansoor</td>
+        <td>Highest</td>
+        <td>To Do</td>
+        <td>59</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-110">FBR-110</a></td>
+        <td>Investigate unverified alerts on ITOCS dashboard pages 6 and 7</td>
+        <td>sehaj.pal</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>54</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-131">FBR-131</a></td>
+        <td>currently functionality for designing a widget does not allow boolean outputs. need to either notify the user that booleans are not accepted or do the type casting in the BE</td>
+        <td>Mohsin Shakeel</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>47</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-191">FBR-191</a></td>
+        <td>App Studio - File Ingestion Monitor Email Feature Not Working</td>
+        <td>Sidra Sial</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-279">FBR-279</a></td>
+        <td>Table tab with empty result silently breaks subsequent tabs in `Tab Navigation` drawer for Widgets</td>
+        <td>Sidra Sial</td>
+        <td>Medium</td>
+        <td>In Progress</td>
+        <td>33</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-313">FBR-313</a></td>
+        <td>Very random "save as" behavior in Studio</td>
+        <td>rohit.sharma</td>
+        <td>Medium</td>
+        <td>In Progress</td>
+        <td>28</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-320">FBR-320</a></td>
+        <td>Table column search doesn't work within dashboards</td>
+        <td>Sidra Sial</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>28</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-337">FBR-337</a></td>
+        <td>MDM systems not syncing nor loading</td>
+        <td>Sidra Sial</td>
+        <td>High</td>
+        <td>To Do</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-342">FBR-342</a></td>
+        <td>ConvoAI memory button breaks</td>
+        <td>sehaj.pal</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-343">FBR-343</a></td>
+        <td>ConvoAI lacks memory even when enabled</td>
+        <td>rohit.sharma</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-381">FBR-381</a></td>
+        <td>Add row-level tab callback support for dashboard widgets</td>
+        <td>Sidra Sial</td>
+        <td>High</td>
+        <td>To Do</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-384">FBR-384</a></td>
+        <td>Fix theme mismatch on CIO Executive Guidance Dashboard</td>
+        <td>Sarmed Ahmed</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-389">FBR-389</a></td>
+        <td>Adding a New Relationship Doesn't Work</td>
+        <td>Mohsin Shakeel</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-406">FBR-406</a></td>
+        <td>App Settings - Creating New App Doesn't Work</td>
+        <td>Mohsin Shakeel</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-411">FBR-411</a></td>
+        <td>The Switch action block cannot be created inside a Foreach block.</td>
+        <td>Raaz M</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-421">FBR-421</a></td>
+        <td>Dashboards -  No Chart Available</td>
+        <td>Mohsin Shakeel</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-424">FBR-424</a></td>
+        <td>Convo AI has no data context</td>
+        <td>sehaj.pal</td>
+        <td>High</td>
+        <td>To Do</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-426">FBR-426</a></td>
+        <td>AI Agent block fails to publish in some Fynite apps due to missing agent model configuration reference</td>
+        <td>Mohsin Shakeel</td>
+        <td>Medium</td>
+        <td>To Do</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-428">FBR-428</a></td>
+        <td>(feat) Add automated emails</td>
+        <td>sehaj.pal</td>
+        <td>High</td>
+        <td>To Do</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td><a href="https://fynite.atlassian.net/browse/FBR-433">FBR-433</a></td>
+        <td>Fix false unsaved changes popup </td>
+        <td>Sakhti S</td>
+        <td>Low</td>
+        <td>To Do</td>
+        <td>14</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">Fynite QA daily report &middot; Auto-regenerated hourly via GitHub Actions &middot; Data source: Jira project FBR</div>
+</body>
+</html>
