@@ -80,9 +80,10 @@ def build_ticket_table_rows(issues):
     return rows
 
 
-def build_bar_rows(stale):
+def build_bar_rows(issues):
+    """Percentage bar chart of ticket count by assignee, same style for any issue set."""
     counts = {}
-    for issue in stale:
+    for issue in issues:
         name = (issue["fields"].get("assignee") or {}).get("displayName", "Unassigned")
         counts[name] = counts.get(name, 0) + 1
     ranked = sorted(counts.items(), key=lambda kv: -kv[1])
@@ -91,7 +92,7 @@ def build_bar_rows(stale):
     bar_rows = ""
     colors = ["#c0392b", "#d97706", "#6b7280"]
     for name, count in ranked:
-        pct = round(count / len(stale) * 100) if stale else 0
+        pct = round(count / len(issues) * 100) if issues else 0
         color = colors[0] if count == max_count else (colors[1] if pct >= 15 else colors[2])
         bar_rows += f"""
     <div class="bar-row">
@@ -103,9 +104,9 @@ def build_bar_rows(stale):
 
 
 def build_html(stale, all_open, total_open, in_progress, created_today, done_today, resolved_7d):
-    bar_rows = build_bar_rows(stale)
+    stale_bar_rows = build_bar_rows(stale)
+    all_open_bar_rows = build_bar_rows(all_open)
     stale_table_rows = build_ticket_table_rows(stale)
-    all_open_table_rows = build_ticket_table_rows(all_open)
     now = datetime.datetime.utcnow().strftime("%B %d, %Y %H:%M UTC")
 
     return f"""<!DOCTYPE html>
@@ -153,20 +154,16 @@ def build_html(stale, all_open, total_open, in_progress, created_today, done_tod
   </div>
 
   <h2>Stale backlog by assignee ({len(stale)} total, 14+ days open)</h2>
-  {bar_rows}
+  {stale_bar_rows}
+
+  <h2>All open tickets by assignee ({len(all_open)} total)</h2>
+  <div class="section-note">Every currently open FBR ticket, regardless of age — not just the 14+ day stale ones above.</div>
+  {all_open_bar_rows}
 
   <h2>Stale ticket detail (14+ days open)</h2>
   <table>
     <thead><tr><th>Key</th><th>Summary</th><th>Assignee</th><th>Priority</th><th>Status</th><th>Days Open</th></tr></thead>
     <tbody>{stale_table_rows}
-    </tbody>
-  </table>
-
-  <h2>All open FBR tickets ({len(all_open)} total)</h2>
-  <div class="section-note">Every currently open ticket in project FBR, regardless of age — not just the 14+ day stale ones above.</div>
-  <table>
-    <thead><tr><th>Key</th><th>Summary</th><th>Assignee</th><th>Priority</th><th>Status</th><th>Days Open</th></tr></thead>
-    <tbody>{all_open_table_rows}
     </tbody>
   </table>
 
