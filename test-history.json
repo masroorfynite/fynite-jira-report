@@ -1,0 +1,155 @@
+[
+  {
+    "date": "2026-08-12T12:14:31Z",
+    "runUrl": "https://github.com/vb-fynite/fynite-playwright-automation/actions/runs/31590549281",
+    "total": 65,
+    "passed": 43,
+    "failed": 14,
+    "failures": [
+      {
+        "name": "AI Agent builds and publishes",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-39"
+        ]
+      },
+      {
+        "name": "AI Agent configuration persists across a reload",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@fts-40"
+        ]
+      },
+      {
+        "name": "A new AI Agent is bound to the Azure OpenAI model",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@nodes",
+          "@fts-41"
+        ]
+      },
+      {
+        "name": "AI Agent builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@nodes",
+          "@fts-42"
+        ]
+      },
+      {
+        "name": "Build a Recurrence + JavaScript workflow, publish, run and verify",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@fts-13"
+        ]
+      },
+      {
+        "name": "Delay action respects the configured Count and Unit",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-82"
+        ]
+      },
+      {
+        "name": "The inspector exposes its tabs and they switch",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-6"
+        ]
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-7"
+        ]
+      },
+      {
+        "name": "Delay action builds, publishes and runs",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-9"
+        ]
+      },
+      {
+        "name": "Parse JSON action builds, publishes and runs",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-10"
+        ]
+      },
+      {
+        "name": "AI Agent executes a prompt mapped from the trigger body",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-65"
+        ]
+      },
+      {
+        "name": "AI Agent output feeds correctly into a downstream Condition block",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-70"
+        ]
+      },
+      {
+        "name": "Response action maps configured Status Code, Headers, Body and Schema into Code View",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-78"
+        ]
+      },
+      {
+        "name": "The sidebar offers and links to AI App Studio",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-35"
+        ]
+      }
+    ],
+    "knownBugs": []
+  }
+]
