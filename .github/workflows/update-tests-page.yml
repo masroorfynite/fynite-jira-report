@@ -1,0 +1,31 @@
+name: Update test history page
+
+on:
+  push:
+    paths:
+      - 'test-history.json'   # fires automatically when the playwright repo pushes a new entry
+  workflow_dispatch: {}       # manual trigger from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-tests-page:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate tests.html
+        run: python generate_test_report.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tests.html
+          git diff --quiet --cached || git commit -m "Auto-update test history page"
+          git push
