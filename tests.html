@@ -33,9 +33,17 @@
 </head>
 <body>
   <h1>Fynite QA &mdash; Daily Test Run History</h1>
-  <div class="date">Auto-updated after each daily run &middot; Last regenerated August 12, 2026 19:45 UTC</div>
+  <div class="date">Auto-updated after each daily run &middot; Last regenerated August 12, 2026 19:58 UTC</div>
 
-  <p>No runs recorded yet.</p>
+  
+    <div class="stats">
+      <div class="stat"><div class="stat-label">Latest run</div><div class="stat-value">2026-08-12</div></div>
+      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">43 / 65</div></div>
+      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value alert">66%</div></div>
+      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value alert">14</div></div>
+    </div>
+    <p class="section-note"><a href="https://github.com/vb-fynite/fynite-playwright-automation/actions/runs/31590549281">View this run on GitHub Actions &rarr;</a></p>
+
   
 
   <h2>Known-bug tracker (latest run)</h2>
@@ -49,14 +57,77 @@
   <h2>Latest run &mdash; failures</h2>
   <table>
     <thead><tr><th>Scenario</th><th>Tags</th></tr></thead>
-    <tbody><tr><td colspan="2">No failures in the latest run.</td></tr>
+    <tbody>
+      <tr>
+        <td>AI Agent builds and publishes</td>
+        <td>@authenticated @workflow-cleanup @ai-agent @e2e @p0 @nodes @fts-39</td>
+      </tr>
+      <tr>
+        <td>AI Agent configuration persists across a reload</td>
+        <td>@authenticated @workflow-cleanup @ai-agent @e2e @fts-40</td>
+      </tr>
+      <tr>
+        <td>A new AI Agent is bound to the Azure OpenAI model</td>
+        <td>@authenticated @workflow-cleanup @ai-agent @e2e @nodes @fts-41</td>
+      </tr>
+      <tr>
+        <td>AI Agent builds, publishes and runs to a successful run</td>
+        <td>@authenticated @workflow-cleanup @ai-agent @e2e @nodes @fts-42</td>
+      </tr>
+      <tr>
+        <td>Build a Recurrence + JavaScript workflow, publish, run and verify</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @fts-13</td>
+      </tr>
+      <tr>
+        <td>Delay action respects the configured Count and Unit</td>
+        <td>@e2e @authenticated @workflow-cleanup @nodes @fts-82</td>
+      </tr>
+      <tr>
+        <td>The inspector exposes its tabs and they switch</td>
+        <td>@smoke @authenticated @fts-6</td>
+      </tr>
+      <tr>
+        <td>Run History opens and renders its grid</td>
+        <td>@smoke @authenticated @fts-7</td>
+      </tr>
+      <tr>
+        <td>Delay action builds, publishes and runs</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-9</td>
+      </tr>
+      <tr>
+        <td>Parse JSON action builds, publishes and runs</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-10</td>
+      </tr>
+      <tr>
+        <td>AI Agent executes a prompt mapped from the trigger body</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-65</td>
+      </tr>
+      <tr>
+        <td>AI Agent output feeds correctly into a downstream Condition block</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-70</td>
+      </tr>
+      <tr>
+        <td>Response action maps configured Status Code, Headers, Body and Schema into Code View</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-78</td>
+      </tr>
+      <tr>
+        <td>The sidebar offers and links to AI App Studio</td>
+        <td>@smoke @authenticated @fts-35</td>
+      </tr>
     </tbody>
   </table>
 
   <h2>Run history (last 30 days)</h2>
   <table>
     <thead><tr><th>Date</th><th>Passed</th><th>Pass rate</th><th>Failed</th><th></th></tr></thead>
-    <tbody><tr><td colspan="5">No history yet.</td></tr>
+    <tbody>
+      <tr>
+        <td>2026-08-12</td>
+        <td>43 / 65</td>
+        <td class="alert">66%</td>
+        <td>14</td>
+        <td><a href="https://github.com/vb-fynite/fynite-playwright-automation/actions/runs/31590549281">View run</a></td>
+      </tr>
     </tbody>
   </table>
 
