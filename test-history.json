@@ -151,5 +151,118 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-08-14T11:54:10.560Z",
+    "runUrl": "https://github.com/vb-fynite/fynite-playwright-automation/actions/runs/31794905926",
+    "total": 60,
+    "passed": 42,
+    "failed": 10,
+    "failures": [
+      {
+        "name": "AI Agent builds and publishes",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-39"
+        ]
+      },
+      {
+        "name": "AI Agent builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@nodes",
+          "@fts-42"
+        ]
+      },
+      {
+        "name": "Build a Recurrence + JavaScript workflow, publish, run and verify",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@fts-13"
+        ]
+      },
+      {
+        "name": "Initialize variables deploys with the configured variable",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-83"
+        ]
+      },
+      {
+        "name": "Compose action builds, publishes and runs",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-8"
+        ]
+      },
+      {
+        "name": "AI Agent executes a prompt mapped from the trigger body",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-65"
+        ]
+      },
+      {
+        "name": "AI Agent output feeds correctly into a downstream Condition block",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-70"
+        ]
+      },
+      {
+        "name": "Switch nested directly inside a Condition generates a real Switch action",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-89"
+        ]
+      },
+      {
+        "name": "Asset Management paginates the assets list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-32"
+        ]
+      },
+      {
+        "name": "Asset Management search filters the assets list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-44"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
