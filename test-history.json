@@ -387,5 +387,27 @@
     "failed": 0,
     "failures": [],
     "knownBugs": []
+  },
+  {
+    "date": "2026-08-17T21:47:58.750Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32067988450",
+    "total": 60,
+    "passed": 55,
+    "failed": 1,
+    "failures": [
+      {
+        "name": "Slack Send Message inside a Switch block maps dynamic values correctly",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-69",
+          "@slack"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
