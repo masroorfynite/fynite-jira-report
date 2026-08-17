@@ -325,5 +325,58 @@
         "passed": false
       }
     ]
+  },
+  {
+    "date": "2026-08-17T20:33:47.151Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32065802431",
+    "total": 34,
+    "passed": 32,
+    "failed": 2,
+    "failures": [
+      {
+        "name": "The inspector exposes its tabs and they switch",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@known-bug",
+          "@e2e",
+          "@fts-6"
+        ]
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@known-bug",
+          "@e2e",
+          "@fts-7"
+        ]
+      }
+    ],
+    "knownBugs": [
+      {
+        "name": "The inspector exposes its tabs and they switch",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@known-bug",
+          "@e2e",
+          "@fts-6"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@known-bug",
+          "@e2e",
+          "@fts-7"
+        ],
+        "passed": false
+      }
+    ]
   }
 ]
