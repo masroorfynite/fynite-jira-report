@@ -264,5 +264,66 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-08-17T20:02:52.211Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32063074767",
+    "total": 34,
+    "passed": 31,
+    "failed": 3,
+    "failures": [
+      {
+        "name": "The designer boots with its core chrome and workflow graph",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-5"
+        ]
+      },
+      {
+        "name": "The inspector exposes its tabs and they switch",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@known-bug",
+          "@e2e",
+          "@fts-6"
+        ]
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@known-bug",
+          "@e2e",
+          "@fts-7"
+        ]
+      }
+    ],
+    "knownBugs": [
+      {
+        "name": "The inspector exposes its tabs and they switch",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@known-bug",
+          "@e2e",
+          "@fts-6"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@known-bug",
+          "@e2e",
+          "@fts-7"
+        ],
+        "passed": false
+      }
+    ]
   }
 ]
