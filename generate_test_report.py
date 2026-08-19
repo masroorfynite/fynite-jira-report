@@ -12,6 +12,7 @@ test-history.json shape (one entry appended per day):
     "total": 65,
     "passed": 60,
     "failed": 5,
+    "skipped": 0,
     "failures": [{"name": "...", "tags": ["@fts-64", "@e2e"]}],
     "knownBugs": [
       {"name": "FTS-66: ...", "tags": ["@known-bug", "@fts-66"], "passed": false},
@@ -55,7 +56,14 @@ def build_html(history):
 
     # --- latest run summary ---
     if latest:
-        pct = round(latest["passed"] / latest["total"] * 100) if latest["total"] else 0
+        # Pass rate is passed / (passed + failed) — skipped scenarios are
+        # environmental no-ops (missing creds/connections), not test outcomes,
+        # so they're reported as their own number instead of silently
+        # dragging the percentage down. A genuine 0-failure day shows 100%
+        # even when some scenarios were skipped.
+        latest_skipped = latest.get("skipped", 0)
+        denom = latest["passed"] + latest["failed"]
+        pct = round(latest["passed"] / denom * 100) if denom else 0
         latest_date = latest["date"][:10]
         latest_summary = f"""
     <div class="stats">
@@ -63,6 +71,7 @@ def build_html(history):
       <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">{latest['passed']} / {latest['total']}</div></div>
       <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value {'ok' if pct >= 90 else 'alert'}">{pct}%</div></div>
       <div class="stat"><div class="stat-label">Failed</div><div class="stat-value {'alert' if latest['failed'] else 'ok'}">{latest['failed']}</div></div>
+      <div class="stat"><div class="stat-label">Skipped</div><div class="stat-value {'alert' if latest_skipped else 'ok'}">{latest_skipped}</div></div>
     </div>
     <p class="section-note"><a href="{esc(latest.get('runUrl', '#'))}">View this run on GitHub Actions &rarr;</a></p>
 """
@@ -72,7 +81,9 @@ def build_html(history):
     # --- trend table (most recent N days) ---
     trend_rows = ""
     for entry in reversed(history[-MAX_HISTORY_SHOWN:]):
-        pct = round(entry["passed"] / entry["total"] * 100) if entry["total"] else 0
+        entry_skipped = entry.get("skipped", 0)
+        denom = entry["passed"] + entry["failed"]
+        pct = round(entry["passed"] / denom * 100) if denom else 0
         status_class = "ok" if entry["failed"] == 0 else "alert"
         trend_rows += f"""
       <tr>
@@ -80,6 +91,7 @@ def build_html(history):
         <td>{entry['passed']} / {entry['total']}</td>
         <td class="{status_class}">{pct}%</td>
         <td>{entry['failed']}</td>
+        <td>{entry_skipped}</td>
         <td><a href="{esc(entry.get('runUrl', '#'))}">View run</a></td>
       </tr>"""
 
@@ -129,7 +141,7 @@ def build_html(history):
   body {{ font-family: -apple-system, Segoe UI, Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; background: #fff; }}
   h1 {{ font-size: 22px; font-weight: 600; margin-bottom: 4px; }}
   .date {{ color: #666; font-size: 14px; margin-bottom: 28px; }}
-  .stats {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 8px; }}
+  .stats {{ display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 8px; }}
   .stat {{ background: #f5f5f4; border-radius: 8px; padding: 14px; }}
   .stat-label {{ font-size: 12px; color: #666; margin-bottom: 4px; }}
   .stat-value {{ font-size: 22px; font-weight: 600; }}
@@ -176,8 +188,8 @@ def build_html(history):
 
   <h2>Run history (last {MAX_HISTORY_SHOWN} days)</h2>
   <table>
-    <thead><tr><th>Date</th><th>Passed</th><th>Pass rate</th><th>Failed</th><th></th></tr></thead>
-    <tbody>{trend_rows if trend_rows else '<tr><td colspan="5">No history yet.</td></tr>'}
+    <thead><tr><th>Date</th><th>Passed</th><th>Pass rate</th><th>Failed</th><th>Skipped</th><th></th></tr></thead>
+    <tbody>{trend_rows if trend_rows else '<tr><td colspan="6">No history yet.</td></tr>'}
     </tbody>
   </table>
 

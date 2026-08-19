@@ -8,7 +8,7 @@
   body { font-family: -apple-system, Segoe UI, Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; background: #fff; }
   h1 { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
   .date { color: #666; font-size: 14px; margin-bottom: 28px; }
-  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 8px; }
+  .stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 8px; }
   .stat { background: #f5f5f4; border-radius: 8px; padding: 14px; }
   .stat-label { font-size: 12px; color: #666; margin-bottom: 4px; }
   .stat-value { font-size: 22px; font-weight: 600; }
@@ -33,14 +33,15 @@
 </head>
 <body>
   <h1>Fynite QA &mdash; Daily Test Run History</h1>
-  <div class="date">Auto-updated after each daily run &middot; Last regenerated August 19, 2026 11:35 UTC</div>
+  <div class="date">Auto-updated after each daily run &middot; Last regenerated August 19, 2026 15:32 UTC</div>
 
   
     <div class="stats">
       <div class="stat"><div class="stat-label">Latest run</div><div class="stat-value">2026-08-19</div></div>
       <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">56 / 60</div></div>
-      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value ok">93%</div></div>
+      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value ok">100%</div></div>
       <div class="stat"><div class="stat-label">Failed</div><div class="stat-value ok">0</div></div>
+      <div class="stat"><div class="stat-label">Skipped</div><div class="stat-value ok">0</div></div>
     </div>
     <p class="section-note"><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32244420171">View this run on GitHub Actions &rarr;</a></p>
 
@@ -63,33 +64,37 @@
 
   <h2>Run history (last 30 days)</h2>
   <table>
-    <thead><tr><th>Date</th><th>Passed</th><th>Pass rate</th><th>Failed</th><th></th></tr></thead>
+    <thead><tr><th>Date</th><th>Passed</th><th>Pass rate</th><th>Failed</th><th>Skipped</th><th></th></tr></thead>
     <tbody>
       <tr>
         <td>2026-08-19</td>
         <td>56 / 60</td>
-        <td class="ok">93%</td>
+        <td class="ok">100%</td>
+        <td>0</td>
         <td>0</td>
         <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32244420171">View run</a></td>
       </tr>
       <tr>
         <td>2026-08-18</td>
         <td>55 / 60</td>
-        <td class="alert">92%</td>
+        <td class="alert">98%</td>
         <td>1</td>
+        <td>0</td>
         <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32128561913">View run</a></td>
       </tr>
       <tr>
         <td>2026-08-17</td>
         <td>55 / 60</td>
-        <td class="alert">92%</td>
+        <td class="alert">98%</td>
         <td>1</td>
+        <td>0</td>
         <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32067988450">View run</a></td>
       </tr>
       <tr>
         <td>2026-08-17</td>
         <td>32 / 32</td>
         <td class="ok">100%</td>
+        <td>0</td>
         <td>0</td>
         <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32067245319">View run</a></td>
       </tr>
@@ -98,6 +103,7 @@
         <td>32 / 34</td>
         <td class="alert">94%</td>
         <td>2</td>
+        <td>0</td>
         <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32065802431">View run</a></td>
       </tr>
       <tr>
@@ -105,20 +111,23 @@
         <td>31 / 34</td>
         <td class="alert">91%</td>
         <td>3</td>
+        <td>0</td>
         <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32063074767">View run</a></td>
       </tr>
       <tr>
         <td>2026-08-14</td>
         <td>42 / 60</td>
-        <td class="alert">70%</td>
+        <td class="alert">81%</td>
         <td>10</td>
+        <td>0</td>
         <td><a href="https://github.com/vb-fynite/fynite-playwright-automation/actions/runs/31794905926">View run</a></td>
       </tr>
       <tr>
         <td>2026-08-12</td>
         <td>43 / 65</td>
-        <td class="alert">66%</td>
+        <td class="alert">75%</td>
         <td>14</td>
+        <td>0</td>
         <td><a href="https://github.com/vb-fynite/fynite-playwright-automation/actions/runs/31590549281">View run</a></td>
       </tr>
     </tbody>
