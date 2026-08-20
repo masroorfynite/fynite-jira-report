@@ -440,5 +440,32 @@
     "failed": 0,
     "failures": [],
     "knownBugs": []
+  },
+  {
+    "date": "2026-08-20T11:37:28.455Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32360782929",
+    "total": 60,
+    "passed": 54,
+    "failed": 2,
+    "failures": [
+      {
+        "name": "Asset Management paginates the assets list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-32"
+        ]
+      },
+      {
+        "name": "Design a widget view from a SQL query and publish it",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@design-cleanup",
+          "@fts-23"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
