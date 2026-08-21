@@ -467,5 +467,74 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-08-21T12:33:17.022Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32474392966",
+    "total": 69,
+    "passed": 59,
+    "failed": 6,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "Creating an Agent workflow opens the designer",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@fts-11"
+        ]
+      },
+      {
+        "name": "The designer boots with its core chrome and workflow graph",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-5"
+        ]
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@e2e",
+          "@fts-7"
+        ]
+      },
+      {
+        "name": "Switch is available as a nested action inside For Each",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-67"
+        ]
+      },
+      {
+        "name": "Response action maps configured Status Code, Headers, Body and Schema into Code View",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-78"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
