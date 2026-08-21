@@ -536,5 +536,56 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-08-21T19:39:49.104Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32509857474",
+    "total": 69,
+    "passed": 61,
+    "failed": 4,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "Response action maps configured Status Code, Headers, Body and Schema into Code View",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-78"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      },
+      {
+        "name": "Slack Send Message builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-51"
+        ]
+      },
+      {
+        "name": "Asset Management search filters the assets list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-44"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
