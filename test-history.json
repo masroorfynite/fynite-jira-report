@@ -587,5 +587,76 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-08-22T12:13:56.084Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32568335453",
+    "total": 70,
+    "passed": 60,
+    "failed": 6,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "The designer boots with its core chrome and workflow graph",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-5"
+        ]
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@e2e",
+          "@fts-7"
+        ]
+      },
+      {
+        "name": "For Each processes items with a nested Condition block",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-66"
+        ]
+      },
+      {
+        "name": "Response action maps configured Status Code, Headers, Body and Schema into Code View",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-78"
+        ]
+      },
+      {
+        "name": "Slack Send Message builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-51"
+        ]
+      },
+      {
+        "name": "Design a widget view from a SQL query and publish it",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@design-cleanup",
+          "@fts-23"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
