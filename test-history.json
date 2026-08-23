@@ -658,5 +658,38 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-08-23T12:07:04.659Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32634531086",
+    "total": 70,
+    "passed": 64,
+    "failed": 2,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "For Each processes items with a nested Condition block",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-66"
+        ]
+      },
+      {
+        "name": "Response action maps configured Status Code, Headers, Body and Schema into Code View",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-78"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
