@@ -691,5 +691,44 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-08-24T12:09:21.419Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32719209726",
+    "total": 70,
+    "passed": 63,
+    "failed": 3,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "The designer boots with its core chrome and workflow graph",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-5"
+        ]
+      },
+      {
+        "name": "Response action maps configured Status Code, Headers, Body and Schema into Code View",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-78"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
