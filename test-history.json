@@ -730,5 +730,36 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-08-25T18:09:38.948Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32873499229",
+    "total": 69,
+    "passed": 63,
+    "failed": 2,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "For Each processes items with a nested Condition block",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-66"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
