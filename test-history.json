@@ -761,5 +761,37 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-08-26T12:29:45.334Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/32960498931",
+    "total": 71,
+    "passed": 65,
+    "failed": 2,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "Slack Send Message inside a Condition block maps dynamic values correctly",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-68",
+          "@slack"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
