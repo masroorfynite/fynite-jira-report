@@ -59,6 +59,76 @@ def days_open(created_str):
     return (datetime.datetime.utcnow() - created).days
 
 
+def parse_jira_ts(ts_str):
+    """Parse a Jira timestamp (e.g. 2026-08-26T16:04:09.493-0500) into an
+    aware UTC datetime, honoring its actual offset."""
+    dt = datetime.datetime.strptime(ts_str[:23], "%Y-%m-%dT%H:%M:%S.%f")
+    sign = 1 if ts_str[23] == "+" else -1
+    offset_h, offset_m = int(ts_str[24:26]), int(ts_str[26:28])
+    tz = datetime.timezone(sign * datetime.timedelta(hours=offset_h, minutes=offset_m))
+    return dt.replace(tzinfo=tz).astimezone(datetime.timezone.utc)
+
+
+def count_created_today(project):
+    """Count tickets created today in UTC.
+
+    JQL's startOfDay() (and any un-suffixed date literal) resolves against
+    the *querying account's* Jira profile timezone, not UTC — so
+    `created >= startOfDay()` silently disagrees with this report's UTC
+    clock (and with whatever timezone a human happens to be querying from).
+    Fetch a safe 2-day window instead and count in Python against a UTC
+    midnight boundary, using each ticket's real creation offset.
+    """
+    issues = jql_search(f"project = {project} AND created >= -2d", fields=["created"])
+    today = datetime.datetime.utcnow().date()
+    return sum(1 for i in issues if parse_jira_ts(i["fields"]["created"]).date() == today)
+
+
+def count_done_today(project):
+    """Count tickets marked Done today (UTC).
+
+    Same class of bug as count_created_today(), confirmed directly: running
+    `status changed to Done after startOfDay()` against the live API
+    returns 12 (matching the real count), but jql_count() — which sends the
+    identical JQL to the approximate-count endpoint — returned 0. Rather
+    than trust startOfDay()'s day-boundary resolution (or approximate-count)
+    for a changelog-based condition, use the unambiguous relative window
+    `-2d`, fetch full issues (not approximate-count), and count client-side
+    against each ticket's actual resolutiondate offset.
+    """
+    issues = jql_search(
+        f"project = {project} AND status changed to Done after -2d",
+        fields=["resolutiondate"],
+    )
+    today = datetime.datetime.utcnow().date()
+    return sum(
+        1
+        for i in issues
+        if i["fields"].get("resolutiondate") and parse_jira_ts(i["fields"]["resolutiondate"]).date() == today
+    )
+
+
+def count_resolved_last_days(project, days):
+    """Count tickets marked Done in the last `days` days (UTC).
+
+    resolved_7d used the same jql_count()-over-approximate-count pattern as
+    the confirmed-broken count_done_today() (same "status changed to Done
+    after ..." changelog clause), just not reported as visibly wrong yet.
+    Fixed defensively with the same client-side-count approach, with a
+    1-day pad on the fetch window to be safe against boundary rounding.
+    """
+    issues = jql_search(
+        f"project = {project} AND status changed to Done after -{days + 1}d",
+        fields=["resolutiondate"],
+    )
+    cutoff = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=days)
+    return sum(
+        1
+        for i in issues
+        if i["fields"].get("resolutiondate") and parse_jira_ts(i["fields"]["resolutiondate"]) >= cutoff
+    )
+
+
 def esc(s):
     return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
@@ -183,9 +253,9 @@ def main():
     )
     total_open = jql_count(f'project = {PROJECT} AND statusCategory != Done')
     in_progress = jql_count(f'project = {PROJECT} AND status = "In Progress"')
-    created_today = jql_count(f'project = {PROJECT} AND created >= startOfDay()')
-    done_today = jql_count(f'project = {PROJECT} AND status changed to Done after startOfDay()')
-    resolved_7d = jql_count(f'project = {PROJECT} AND status changed to Done after -7d')
+    created_today = count_created_today(PROJECT)
+    done_today = count_done_today(PROJECT)
+    resolved_7d = count_resolved_last_days(PROJECT, 7)
 
     html = build_html(stale, all_open, total_open, in_progress, created_today, done_today, resolved_7d)
     with open("index.html", "w") as f:
