@@ -793,5 +793,107 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-08-29T16:59:07.317Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/33259298308",
+    "total": 75,
+    "passed": 61,
+    "failed": 10,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@e2e",
+          "@fts-7"
+        ]
+      },
+      {
+        "name": "Gmail List Messages builds, publishes and runs with real inbox output",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-91"
+        ]
+      },
+      {
+        "name": "Chunk Text (size-based) splits input text into bounded chunks",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-102"
+        ]
+      },
+      {
+        "name": "For Each processes items with a nested Condition block",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-66"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      },
+      {
+        "name": "The sidebar offers and links to Access Management",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-35"
+        ]
+      },
+      {
+        "name": "Design a widget view from a SQL query and publish it",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@design-cleanup",
+          "@fts-23"
+        ]
+      },
+      {
+        "name": "The Design Wizard opens on its first step",
+        "tags": [
+          "@authenticated",
+          "@smoke",
+          "@fts-19"
+        ]
+      },
+      {
+        "name": "The Design Wizard requires its mandatory fields before continuing",
+        "tags": [
+          "@authenticated",
+          "@fts-20"
+        ]
+      },
+      {
+        "name": "\"Create New\" opens the Design View creation surface",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-15"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
