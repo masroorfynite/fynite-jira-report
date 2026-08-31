@@ -895,5 +895,57 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-08-31T15:31:47.997Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/33408110964",
+    "total": 33,
+    "passed": 28,
+    "failed": 5,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "The designer boots with its core chrome and workflow graph",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-5"
+        ]
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@e2e",
+          "@fts-7"
+        ]
+      },
+      {
+        "name": "The sidebar offers and links to Access Management",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-35"
+        ]
+      },
+      {
+        "name": "The Design Wizard opens on its first step",
+        "tags": [
+          "@authenticated",
+          "@smoke",
+          "@fts-19"
+        ]
+      },
+      {
+        "name": "\"Create New\" opens the Design View creation surface",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-15"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
