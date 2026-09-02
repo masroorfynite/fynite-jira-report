@@ -947,5 +947,732 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-09-02T14:34:15.855Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/33642641781",
+    "total": 79,
+    "passed": 4,
+    "failed": 75,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "AI Agent builds and publishes",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-39"
+        ]
+      },
+      {
+        "name": "AI Agent configuration persists across a reload",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@fts-40"
+        ]
+      },
+      {
+        "name": "A new AI Agent is bound to the Azure OpenAI model",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@nodes",
+          "@fts-41"
+        ]
+      },
+      {
+        "name": "AI Agent builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@nodes",
+          "@fts-42"
+        ]
+      },
+      {
+        "name": "AI Agent output routes through a Switch by classification result",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-117"
+        ]
+      },
+      {
+        "name": "Build a Recurrence + JavaScript workflow, publish, run and verify",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@fts-13"
+        ]
+      },
+      {
+        "name": "Delay action respects the configured Count and Unit",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-82"
+        ]
+      },
+      {
+        "name": "Initialize variables deploys with the configured variable",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-83"
+        ]
+      },
+      {
+        "name": "Creating an Agent workflow opens the designer",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@fts-11"
+        ]
+      },
+      {
+        "name": "The designer boots with its core chrome and workflow graph",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-5"
+        ]
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@e2e",
+          "@fts-7"
+        ]
+      },
+      {
+        "name": "Gmail Get Message builds, publishes and runs with the real message ID from List Messages",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-92"
+        ]
+      },
+      {
+        "name": "Gmail Get Message correctly receives a dynamic message_id from Gmail List Messages via Compose",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-94"
+        ]
+      },
+      {
+        "name": "Gmail List Messages builds, publishes and runs with real inbox output",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-91"
+        ]
+      },
+      {
+        "name": "Gmail Send Email (standalone, no nesting) delivers a real message",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-112"
+        ]
+      },
+      {
+        "name": "Compose action builds, publishes and runs",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-8"
+        ]
+      },
+      {
+        "name": "Delay action builds, publishes and runs",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-9"
+        ]
+      },
+      {
+        "name": "Parse JSON action builds, publishes and runs",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-10"
+        ]
+      },
+      {
+        "name": "Chunk Text (size-based) splits input text into bounded chunks",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-102"
+        ]
+      },
+      {
+        "name": "Select action transforms each array item using its key-value mapping",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-85"
+        ]
+      },
+      {
+        "name": "AI Agent executes a prompt mapped from the trigger body",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-65"
+        ]
+      },
+      {
+        "name": "AI Agent action completes end-to-end via Formulator Callback",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-50"
+        ]
+      },
+      {
+        "name": "Condition block routes to its TRUE branch and runs the branch action",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-64",
+          "@slack"
+        ]
+      },
+      {
+        "name": "Slack Send Message inside a Condition block maps dynamic values correctly",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-68",
+          "@slack"
+        ]
+      },
+      {
+        "name": "For Each processes items with a nested Condition block",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-66"
+        ]
+      },
+      {
+        "name": "Switch is available as a nested action inside For Each",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-67"
+        ]
+      },
+      {
+        "name": "AI Agent output feeds correctly into a downstream Condition block",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-70"
+        ]
+      },
+      {
+        "name": "Switch nested directly inside a Condition generates a real Switch action",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-89"
+        ]
+      },
+      {
+        "name": "Gmail Send Email succeeds inside a Condition block with a static body",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-97"
+        ]
+      },
+      {
+        "name": "Formulator Callback passes the provided JSON body through to Switch routing",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-98",
+          "@slack"
+        ]
+      },
+      {
+        "name": "Terminate action ends the run with a custom status and message",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-100"
+        ]
+      },
+      {
+        "name": "Filter array keeps only items matching the configured condition",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-101"
+        ]
+      },
+      {
+        "name": "Listener workflow gets a new Succeeded run after the sender sends a real email",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@outlook",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-57"
+        ]
+      },
+      {
+        "name": "Outlook Send an email builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@outlook",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-56"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      },
+      {
+        "name": "Slack Get Channel Messages reads back a message from the configured channel",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-108"
+        ]
+      },
+      {
+        "name": "Slack Send Message builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-51"
+        ]
+      },
+      {
+        "name": "Listener workflow gets a new Succeeded run after the sender posts a real Teams message",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@teams",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-55"
+        ]
+      },
+      {
+        "name": "Teams Post message in a chat or channel builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@teams",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-54"
+        ]
+      },
+      {
+        "name": "App Studio Dynamic Forms shows the forms list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-29"
+        ]
+      },
+      {
+        "name": "App Studio Dynamic Forms offers adding a form",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-30"
+        ]
+      },
+      {
+        "name": "App Studio Dynamic Forms search filters the forms list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-43"
+        ]
+      },
+      {
+        "name": "Asset Management shows the assets list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-31"
+        ]
+      },
+      {
+        "name": "Asset Management paginates the assets list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-32"
+        ]
+      },
+      {
+        "name": "Asset Management search filters the assets list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-44"
+        ]
+      },
+      {
+        "name": "A table column search filters rows by a text value",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-48"
+        ]
+      },
+      {
+        "name": "A table column search filters rows by a numeric value",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-49"
+        ]
+      },
+      {
+        "name": "A widget action menu exposes its options",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@fts-38"
+        ]
+      },
+      {
+        "name": "Data Studio Connections shows the connections list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-27"
+        ]
+      },
+      {
+        "name": "Data Studio Connections offers adding a connection",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-28"
+        ]
+      },
+      {
+        "name": "Data Studio Connections offers a search control that filters the list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-45"
+        ]
+      },
+      {
+        "name": "The Query Editor renders its editor and run controls",
+        "tags": [
+          "@authenticated",
+          "@smoke",
+          "@fts-24"
+        ]
+      },
+      {
+        "name": "An invalid query surfaces a query error",
+        "tags": [
+          "@authenticated",
+          "@e2e",
+          "@fts-26"
+        ]
+      },
+      {
+        "name": "The notifications panel opens with its tabs and an unread count",
+        "tags": [
+          "@authenticated",
+          "@smoke",
+          "@fts-46"
+        ]
+      },
+      {
+        "name": "The sidebar offers and links to Dashboards",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-35"
+        ]
+      },
+      {
+        "name": "The sidebar offers and links to Data Studio",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-35"
+        ]
+      },
+      {
+        "name": "The sidebar offers and links to Widget Studio",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-35"
+        ]
+      },
+      {
+        "name": "The sidebar offers and links to Agent Studio",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-35"
+        ]
+      },
+      {
+        "name": "The sidebar offers and links to App Studio",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-35"
+        ]
+      },
+      {
+        "name": "The sidebar offers and links to Access Management",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-35"
+        ]
+      },
+      {
+        "name": "The sidebar offers and links to Settings",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-35"
+        ]
+      },
+      {
+        "name": "The profile shows the authenticated user identity",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-33"
+        ]
+      },
+      {
+        "name": "The Change Password tab reveals its fields",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-34"
+        ]
+      },
+      {
+        "name": "Create a dashboard, see it listed, then delete it",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@dashboard-cleanup",
+          "@fts-21"
+        ]
+      },
+      {
+        "name": "The New Dashboard modal opens with its required fields",
+        "tags": [
+          "@authenticated",
+          "@smoke",
+          "@fts-16"
+        ]
+      },
+      {
+        "name": "Creating a dashboard requires a title and a description",
+        "tags": [
+          "@authenticated",
+          "@fts-17"
+        ]
+      },
+      {
+        "name": "Design a widget view from a SQL query and publish it",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@design-cleanup",
+          "@fts-23"
+        ]
+      },
+      {
+        "name": "The Design Wizard opens on its first step",
+        "tags": [
+          "@authenticated",
+          "@smoke",
+          "@fts-19"
+        ]
+      },
+      {
+        "name": "The Design Wizard requires its mandatory fields before continuing",
+        "tags": [
+          "@authenticated",
+          "@fts-20"
+        ]
+      },
+      {
+        "name": "Widget Studio offers its three creation modules",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-14"
+        ]
+      },
+      {
+        "name": "\"Create New\" opens the Dashboard creation surface",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-15"
+        ]
+      },
+      {
+        "name": "\"Create New\" opens the Widget View creation surface",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-15"
+        ]
+      },
+      {
+        "name": "\"Create New\" opens the Design View creation surface",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-15"
+        ]
+      },
+      {
+        "name": "Creating a Widget view through the Add View panel succeeds",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@widget-cleanup",
+          "@fts-22"
+        ]
+      },
+      {
+        "name": "The Add View panel opens with its core controls",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-18"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
