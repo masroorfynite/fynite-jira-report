@@ -2522,5 +2522,394 @@
         "passed": false
       }
     ]
+  },
+  {
+    "date": "2026-09-03T23:56:57.228Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/33815222667",
+    "total": 16,
+    "passed": 2,
+    "failed": 14,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "HTTP response flows through Parse JSON into a dynamically mapped Slack message",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@known-bug",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-95"
+        ]
+      },
+      {
+        "name": "Parse JSON action saves and maps the configured Content field",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-84"
+        ]
+      },
+      {
+        "name": "Chunk Text action accepts the Sentence chunking strategy at runtime",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-86"
+        ]
+      },
+      {
+        "name": "Switch nested inside For Each generates a real Switch action, not an If",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-88"
+        ]
+      },
+      {
+        "name": "Response action maps configured Status Code, Headers, Body and Schema into Code View",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-78"
+        ]
+      },
+      {
+        "name": "For Each is available as a nested action inside a Switch case",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-75"
+        ]
+      },
+      {
+        "name": "Switch nested inside a Condition branch publishes after its default case is renamed",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-79",
+          "@slack"
+        ]
+      },
+      {
+        "name": "Slack Send Message succeeds when nested inside a For Each loop",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-96",
+          "@slack"
+        ]
+      },
+      {
+        "name": "Slack List Channels returns the workspace's channel list",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@known-bug",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-107"
+        ]
+      },
+      {
+        "name": "Listener workflow gets a new Succeeded run after the sender posts a real Slack message",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@known-bug",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-53"
+        ]
+      },
+      {
+        "name": "Switch with five or more cases selects the correct case, not just the first two",
+        "tags": [
+          "@known-bug",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-122"
+        ]
+      },
+      {
+        "name": "Add a Widget view through the Add View modal",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@widget-cleanup",
+          "@known-bug",
+          "@fts-3"
+        ]
+      },
+      {
+        "name": "Add a Table view through the Add View modal",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@widget-cleanup",
+          "@known-bug",
+          "@fts-4"
+        ]
+      },
+      {
+        "name": "Running a SELECT returns a results grid",
+        "tags": [
+          "@authenticated",
+          "@known-bug",
+          "@e2e",
+          "@fts-25"
+        ]
+      }
+    ],
+    "knownBugs": [
+      {
+        "name": "HTTP response flows through Parse JSON into a dynamically mapped Slack message",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@known-bug",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-95"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Parse JSON action saves and maps the configured Content field",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-84"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Chunk Text action accepts the Sentence chunking strategy at runtime",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-86"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Switch nested inside For Each generates a real Switch action, not an If",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-88"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Slack Send Message inside a Switch block maps dynamic values correctly",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-69",
+          "@slack"
+        ],
+        "passed": true
+      },
+      {
+        "name": "Response action maps configured Status Code, Headers, Body and Schema into Code View",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-78"
+        ],
+        "passed": false
+      },
+      {
+        "name": "For Each is available as a nested action inside a Switch case",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-75"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Switch nested inside a Condition branch publishes after its default case is renamed",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-79",
+          "@slack"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Google Drive Get File Content resolves connector parameters and reaches Google Drive",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-93"
+        ],
+        "passed": true
+      },
+      {
+        "name": "Slack Send Message succeeds when nested inside a For Each loop",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@known-bug",
+          "@fts-96",
+          "@slack"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Slack List Channels returns the workspace's channel list",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@known-bug",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-107"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Listener workflow gets a new Succeeded run after the sender posts a real Slack message",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@known-bug",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-53"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Switch with five or more cases selects the correct case, not just the first two",
+        "tags": [
+          "@known-bug",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-122"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Add a Widget view through the Add View modal",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@widget-cleanup",
+          "@known-bug",
+          "@fts-3"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Add a Table view through the Add View modal",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@widget-cleanup",
+          "@known-bug",
+          "@fts-4"
+        ],
+        "passed": false
+      },
+      {
+        "name": "Running a SELECT returns a results grid",
+        "tags": [
+          "@authenticated",
+          "@known-bug",
+          "@e2e",
+          "@fts-25"
+        ],
+        "passed": false
+      }
+    ]
   }
 ]
