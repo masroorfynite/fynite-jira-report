@@ -33,21 +33,21 @@
 </head>
 <body>
   <h1>Fynite QA &mdash; Daily Test Run History</h1>
-  <div class="date">Auto-updated after each daily run &middot; Last regenerated September 03, 2026 23:57 UTC</div>
+  <div class="date">Auto-updated after each daily run &middot; Last regenerated September 04, 2026 20:08 UTC</div>
 
   
     <div class="stats">
-      <div class="stat"><div class="stat-label">Latest run</div><div class="stat-value">2026-09-03</div></div>
-      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">2 / 16</div></div>
-      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value alert">12%</div></div>
-      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value alert">14</div></div>
+      <div class="stat"><div class="stat-label">Latest run</div><div class="stat-value">2026-09-04</div></div>
+      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">3 / 19</div></div>
+      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value alert">16%</div></div>
+      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value alert">16</div></div>
       <div class="stat"><div class="stat-label">Skipped</div><div class="stat-value ok">0</div></div>
     </div>
-    <p class="section-note"><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/33815222667">View this run on GitHub Actions &rarr;</a></p>
+    <p class="section-note"><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/33908898370">View this run on GitHub Actions &rarr;</a></p>
 
   
     <div class="highlight alert-highlight">
-      <strong>Action needed:</strong> 2 known-bug scenario(s) passed in the latest run: Slack Send Message inside a Switch block maps dynamic values correctly, Google Drive Get File Content resolves connector parameters and reaches Google Drive.
+      <strong>Action needed:</strong> 3 known-bug scenario(s) passed in the latest run: Slack Send Message inside a Switch block maps dynamic values correctly, Google Drive Get File Content resolves connector parameters and reaches Google Drive, A Response action nested inside a Condition&#x27;s TRUE branch returns conditionally.
       This usually means the underlying product bug was fixed &mdash; worth confirming and removing the
       <code>@known-bug</code> tag so it moves into the default daily suite.
     </div>
@@ -106,6 +106,21 @@
         <td>Slack Send Message succeeds when nested inside a For Each loop</td>
         <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-96 @slack</td>
         <td>Failing as expected</td>
+      </tr>
+      <tr class="expected">
+        <td>For Each over parsed HTTP items runs a nested Condition per item, three blocks deep</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-118</td>
+        <td>Failing as expected</td>
+      </tr>
+      <tr class="expected">
+        <td>For Each over an empty array completes without executing its body</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-120</td>
+        <td>Failing as expected</td>
+      </tr>
+      <tr class="unexpected">
+        <td>A Response action nested inside a Condition&#x27;s TRUE branch returns conditionally</td>
+        <td>@authenticated @workflow-cleanup @known-bug @e2e @p0 @nodes @fts-119</td>
+        <td>PASSING &mdash; check if fix landed!</td>
       </tr>
       <tr class="expected">
         <td>Slack List Channels returns the workspace&#x27;s channel list</td>
@@ -177,6 +192,14 @@
         <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-96 @slack</td>
       </tr>
       <tr>
+        <td>For Each over parsed HTTP items runs a nested Condition per item, three blocks deep</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-118</td>
+      </tr>
+      <tr>
+        <td>For Each over an empty array completes without executing its body</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-120</td>
+      </tr>
+      <tr>
         <td>Slack List Channels returns the workspace&#x27;s channel list</td>
         <td>@authenticated @workflow-cleanup @slack @known-bug @e2e @p0 @nodes @fts-107</td>
       </tr>
@@ -207,6 +230,14 @@
   <table>
     <thead><tr><th>Date</th><th>Passed</th><th>Pass rate</th><th>Failed</th><th>Skipped</th><th></th></tr></thead>
     <tbody>
+      <tr>
+        <td>2026-09-04</td>
+        <td>3 / 19</td>
+        <td class="alert">16%</td>
+        <td>16</td>
+        <td>0</td>
+        <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/33908898370">View run</a></td>
+      </tr>
       <tr>
         <td>2026-09-03</td>
         <td>2 / 16</td>
