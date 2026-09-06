@@ -33,125 +33,25 @@
 </head>
 <body>
   <h1>Fynite QA &mdash; Daily Test Run History</h1>
-  <div class="date">Auto-updated after each daily run &middot; Last regenerated September 04, 2026 20:08 UTC</div>
+  <div class="date">Auto-updated after each daily run &middot; Last regenerated September 06, 2026 13:44 UTC</div>
 
   
     <div class="stats">
-      <div class="stat"><div class="stat-label">Latest run</div><div class="stat-value">2026-09-04</div></div>
-      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">3 / 19</div></div>
-      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value alert">16%</div></div>
-      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value alert">16</div></div>
+      <div class="stat"><div class="stat-label">Latest run</div><div class="stat-value">2026-09-06</div></div>
+      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">4 / 80</div></div>
+      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value alert">5%</div></div>
+      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value alert">76</div></div>
       <div class="stat"><div class="stat-label">Skipped</div><div class="stat-value ok">0</div></div>
     </div>
-    <p class="section-note"><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/33908898370">View this run on GitHub Actions &rarr;</a></p>
+    <p class="section-note"><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/34036855163">View this run on GitHub Actions &rarr;</a></p>
 
   
-    <div class="highlight alert-highlight">
-      <strong>Action needed:</strong> 3 known-bug scenario(s) passed in the latest run: Slack Send Message inside a Switch block maps dynamic values correctly, Google Drive Get File Content resolves connector parameters and reaches Google Drive, A Response action nested inside a Condition&#x27;s TRUE branch returns conditionally.
-      This usually means the underlying product bug was fixed &mdash; worth confirming and removing the
-      <code>@known-bug</code> tag so it moves into the default daily suite.
-    </div>
 
   <h2>Known-bug tracker (latest run)</h2>
   <div class="section-note">Scenarios intentionally excluded from the default suite until their underlying product bug is fixed. A row turning green here is a real signal.</div>
   <table>
     <thead><tr><th>Scenario</th><th>Tags</th><th>Status</th></tr></thead>
-    <tbody>
-      <tr class="expected">
-        <td>HTTP response flows through Parse JSON into a dynamically mapped Slack message</td>
-        <td>@authenticated @workflow-cleanup @slack @known-bug @e2e @p0 @nodes @fts-95</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="expected">
-        <td>Parse JSON action saves and maps the configured Content field</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-84</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="expected">
-        <td>Chunk Text action accepts the Sentence chunking strategy at runtime</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-86</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="expected">
-        <td>Switch nested inside For Each generates a real Switch action, not an If</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-88</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="unexpected">
-        <td>Slack Send Message inside a Switch block maps dynamic values correctly</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-69 @slack</td>
-        <td>PASSING &mdash; check if fix landed!</td>
-      </tr>
-      <tr class="expected">
-        <td>Response action maps configured Status Code, Headers, Body and Schema into Code View</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-78</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="expected">
-        <td>For Each is available as a nested action inside a Switch case</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-75</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="expected">
-        <td>Switch nested inside a Condition branch publishes after its default case is renamed</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-79 @slack</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="unexpected">
-        <td>Google Drive Get File Content resolves connector parameters and reaches Google Drive</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-93</td>
-        <td>PASSING &mdash; check if fix landed!</td>
-      </tr>
-      <tr class="expected">
-        <td>Slack Send Message succeeds when nested inside a For Each loop</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-96 @slack</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="expected">
-        <td>For Each over parsed HTTP items runs a nested Condition per item, three blocks deep</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-118</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="expected">
-        <td>For Each over an empty array completes without executing its body</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-120</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="unexpected">
-        <td>A Response action nested inside a Condition&#x27;s TRUE branch returns conditionally</td>
-        <td>@authenticated @workflow-cleanup @known-bug @e2e @p0 @nodes @fts-119</td>
-        <td>PASSING &mdash; check if fix landed!</td>
-      </tr>
-      <tr class="expected">
-        <td>Slack List Channels returns the workspace&#x27;s channel list</td>
-        <td>@authenticated @workflow-cleanup @slack @known-bug @e2e @p0 @nodes @fts-107</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="expected">
-        <td>Listener workflow gets a new Succeeded run after the sender posts a real Slack message</td>
-        <td>@authenticated @workflow-cleanup @slack @known-bug @e2e @p0 @nodes @fts-53</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="expected">
-        <td>Switch with five or more cases selects the correct case, not just the first two</td>
-        <td>@known-bug @authenticated @workflow-cleanup @e2e @p0 @nodes @fts-122</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="expected">
-        <td>Add a Widget view through the Add View modal</td>
-        <td>@e2e @p0 @authenticated @widget-cleanup @known-bug @fts-3</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="expected">
-        <td>Add a Table view through the Add View modal</td>
-        <td>@e2e @p0 @authenticated @widget-cleanup @known-bug @fts-4</td>
-        <td>Failing as expected</td>
-      </tr>
-      <tr class="expected">
-        <td>Running a SELECT returns a results grid</td>
-        <td>@authenticated @known-bug @e2e @fts-25</td>
-        <td>Failing as expected</td>
-      </tr>
+    <tbody><tr><td colspan="3">No known-bug scenarios recorded.</td></tr>
     </tbody>
   </table>
 
@@ -160,68 +60,308 @@
     <thead><tr><th>Scenario</th><th>Tags</th></tr></thead>
     <tbody>
       <tr>
-        <td>HTTP response flows through Parse JSON into a dynamically mapped Slack message</td>
-        <td>@authenticated @workflow-cleanup @slack @known-bug @e2e @p0 @nodes @fts-95</td>
+        <td>AI Agent builds and publishes</td>
+        <td>@authenticated @workflow-cleanup @ai-agent @e2e @p0 @nodes @fts-39</td>
       </tr>
       <tr>
-        <td>Parse JSON action saves and maps the configured Content field</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-84</td>
+        <td>AI Agent configuration persists across a reload</td>
+        <td>@authenticated @workflow-cleanup @ai-agent @e2e @fts-40</td>
       </tr>
       <tr>
-        <td>Chunk Text action accepts the Sentence chunking strategy at runtime</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-86</td>
+        <td>A new AI Agent is bound to the Azure OpenAI model</td>
+        <td>@authenticated @workflow-cleanup @ai-agent @e2e @nodes @fts-41</td>
       </tr>
       <tr>
-        <td>Switch nested inside For Each generates a real Switch action, not an If</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-88</td>
+        <td>AI Agent builds, publishes and runs to a successful run</td>
+        <td>@authenticated @workflow-cleanup @ai-agent @e2e @nodes @fts-42</td>
       </tr>
       <tr>
-        <td>Response action maps configured Status Code, Headers, Body and Schema into Code View</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-78</td>
+        <td>AI Agent output routes through a Switch by classification result</td>
+        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-117</td>
       </tr>
       <tr>
-        <td>For Each is available as a nested action inside a Switch case</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-75</td>
+        <td>Build a Recurrence + JavaScript workflow, publish, run and verify</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @fts-13</td>
       </tr>
       <tr>
-        <td>Switch nested inside a Condition branch publishes after its default case is renamed</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-79 @slack</td>
+        <td>Delay action respects the configured Count and Unit</td>
+        <td>@e2e @authenticated @workflow-cleanup @nodes @fts-82</td>
       </tr>
       <tr>
-        <td>Slack Send Message succeeds when nested inside a For Each loop</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-96 @slack</td>
+        <td>Initialize variables deploys with the configured variable</td>
+        <td>@e2e @authenticated @workflow-cleanup @nodes @fts-83</td>
       </tr>
       <tr>
-        <td>For Each over parsed HTTP items runs a nested Condition per item, three blocks deep</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-118</td>
+        <td>Condition evaluates a combined AND/OR expression correctly</td>
+        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-121</td>
       </tr>
       <tr>
-        <td>For Each over an empty array completes without executing its body</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @known-bug @fts-120</td>
+        <td>Creating an Agent workflow opens the designer</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @fts-11</td>
       </tr>
       <tr>
-        <td>Slack List Channels returns the workspace&#x27;s channel list</td>
-        <td>@authenticated @workflow-cleanup @slack @known-bug @e2e @p0 @nodes @fts-107</td>
+        <td>The designer boots with its core chrome and workflow graph</td>
+        <td>@smoke @authenticated @fts-5</td>
       </tr>
       <tr>
-        <td>Listener workflow gets a new Succeeded run after the sender posts a real Slack message</td>
-        <td>@authenticated @workflow-cleanup @slack @known-bug @e2e @p0 @nodes @fts-53</td>
+        <td>Run History opens and renders its grid</td>
+        <td>@smoke @authenticated @e2e @fts-7</td>
       </tr>
       <tr>
-        <td>Switch with five or more cases selects the correct case, not just the first two</td>
-        <td>@known-bug @authenticated @workflow-cleanup @e2e @p0 @nodes @fts-122</td>
+        <td>Gmail Get Message builds, publishes and runs with the real message ID from List Messages</td>
+        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-92</td>
       </tr>
       <tr>
-        <td>Add a Widget view through the Add View modal</td>
-        <td>@e2e @p0 @authenticated @widget-cleanup @known-bug @fts-3</td>
+        <td>Gmail Get Message correctly receives a dynamic message_id from Gmail List Messages via Compose</td>
+        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-94</td>
       </tr>
       <tr>
-        <td>Add a Table view through the Add View modal</td>
-        <td>@e2e @p0 @authenticated @widget-cleanup @known-bug @fts-4</td>
+        <td>Gmail List Messages builds, publishes and runs with real inbox output</td>
+        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-91</td>
       </tr>
       <tr>
-        <td>Running a SELECT returns a results grid</td>
-        <td>@authenticated @known-bug @e2e @fts-25</td>
+        <td>Gmail Send Email (standalone, no nesting) delivers a real message</td>
+        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-112</td>
+      </tr>
+      <tr>
+        <td>Compose action builds, publishes and runs</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-8</td>
+      </tr>
+      <tr>
+        <td>Delay action builds, publishes and runs</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-9</td>
+      </tr>
+      <tr>
+        <td>Parse JSON action builds, publishes and runs</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-10</td>
+      </tr>
+      <tr>
+        <td>Chunk Text (size-based) splits input text into bounded chunks</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-102</td>
+      </tr>
+      <tr>
+        <td>Select action transforms each array item using its key-value mapping</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-85</td>
+      </tr>
+      <tr>
+        <td>AI Agent executes a prompt mapped from the trigger body</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-65</td>
+      </tr>
+      <tr>
+        <td>AI Agent action completes end-to-end via Formulator Callback</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-50</td>
+      </tr>
+      <tr>
+        <td>Condition block routes to its TRUE branch and runs the branch action</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-64 @slack</td>
+      </tr>
+      <tr>
+        <td>Slack Send Message inside a Condition block maps dynamic values correctly</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-68 @slack</td>
+      </tr>
+      <tr>
+        <td>For Each processes items with a nested Condition block</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-66</td>
+      </tr>
+      <tr>
+        <td>Switch is available as a nested action inside For Each</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-67</td>
+      </tr>
+      <tr>
+        <td>AI Agent output feeds correctly into a downstream Condition block</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-70</td>
+      </tr>
+      <tr>
+        <td>Switch nested directly inside a Condition generates a real Switch action</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-89</td>
+      </tr>
+      <tr>
+        <td>Gmail Send Email succeeds inside a Condition block with a static body</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-97</td>
+      </tr>
+      <tr>
+        <td>Formulator Callback passes the provided JSON body through to Switch routing</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-98 @slack</td>
+      </tr>
+      <tr>
+        <td>Terminate action ends the run with a custom status and message</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-100</td>
+      </tr>
+      <tr>
+        <td>Filter array keeps only items matching the configured condition</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-101</td>
+      </tr>
+      <tr>
+        <td>Listener workflow gets a new Succeeded run after the sender sends a real email</td>
+        <td>@authenticated @workflow-cleanup @outlook @e2e @p0 @nodes @fts-57</td>
+      </tr>
+      <tr>
+        <td>Outlook Send an email builds, publishes and runs to a successful run</td>
+        <td>@authenticated @workflow-cleanup @outlook @e2e @p0 @nodes @fts-56</td>
+      </tr>
+      <tr>
+        <td>Running the qa-smoke-auto fixture produces a successful run</td>
+        <td>@e2e @p0 @authenticated @fts-12</td>
+      </tr>
+      <tr>
+        <td>Slack Get Channel Messages reads back a message from the configured channel</td>
+        <td>@authenticated @workflow-cleanup @slack @e2e @p0 @nodes @fts-108</td>
+      </tr>
+      <tr>
+        <td>Slack Send Message builds, publishes and runs to a successful run</td>
+        <td>@authenticated @workflow-cleanup @slack @e2e @p0 @nodes @fts-51</td>
+      </tr>
+      <tr>
+        <td>Listener workflow gets a new Succeeded run after the sender posts a real Teams message</td>
+        <td>@authenticated @workflow-cleanup @teams @e2e @p0 @nodes @fts-55</td>
+      </tr>
+      <tr>
+        <td>Teams Post message in a chat or channel builds, publishes and runs to a successful run</td>
+        <td>@authenticated @workflow-cleanup @teams @e2e @p0 @nodes @fts-54</td>
+      </tr>
+      <tr>
+        <td>App Studio Dynamic Forms shows the forms list</td>
+        <td>@smoke @authenticated @fts-29</td>
+      </tr>
+      <tr>
+        <td>App Studio Dynamic Forms offers adding a form</td>
+        <td>@smoke @authenticated @fts-30</td>
+      </tr>
+      <tr>
+        <td>App Studio Dynamic Forms search filters the forms list</td>
+        <td>@smoke @authenticated @fts-43</td>
+      </tr>
+      <tr>
+        <td>Asset Management shows the assets list</td>
+        <td>@smoke @authenticated @fts-31</td>
+      </tr>
+      <tr>
+        <td>Asset Management paginates the assets list</td>
+        <td>@smoke @authenticated @fts-32</td>
+      </tr>
+      <tr>
+        <td>Asset Management search filters the assets list</td>
+        <td>@smoke @authenticated @fts-44</td>
+      </tr>
+      <tr>
+        <td>A table column search filters rows by a text value</td>
+        <td>@smoke @authenticated @fts-48</td>
+      </tr>
+      <tr>
+        <td>A table column search filters rows by a numeric value</td>
+        <td>@smoke @authenticated @fts-49</td>
+      </tr>
+      <tr>
+        <td>A widget action menu exposes its options</td>
+        <td>@e2e @authenticated @fts-38</td>
+      </tr>
+      <tr>
+        <td>Data Studio Connections shows the connections list</td>
+        <td>@smoke @authenticated @fts-27</td>
+      </tr>
+      <tr>
+        <td>Data Studio Connections offers adding a connection</td>
+        <td>@smoke @authenticated @fts-28</td>
+      </tr>
+      <tr>
+        <td>Data Studio Connections offers a search control that filters the list</td>
+        <td>@smoke @authenticated @fts-45</td>
+      </tr>
+      <tr>
+        <td>The Query Editor renders its editor and run controls</td>
+        <td>@authenticated @smoke @fts-24</td>
+      </tr>
+      <tr>
+        <td>An invalid query surfaces a query error</td>
+        <td>@authenticated @e2e @fts-26</td>
+      </tr>
+      <tr>
+        <td>The notifications panel opens with its tabs and an unread count</td>
+        <td>@authenticated @smoke @fts-46</td>
+      </tr>
+      <tr>
+        <td>The sidebar offers and links to Dashboards</td>
+        <td>@smoke @authenticated @fts-35</td>
+      </tr>
+      <tr>
+        <td>The sidebar offers and links to Data Studio</td>
+        <td>@smoke @authenticated @fts-35</td>
+      </tr>
+      <tr>
+        <td>The sidebar offers and links to Widget Studio</td>
+        <td>@smoke @authenticated @fts-35</td>
+      </tr>
+      <tr>
+        <td>The sidebar offers and links to Agent Studio</td>
+        <td>@smoke @authenticated @fts-35</td>
+      </tr>
+      <tr>
+        <td>The sidebar offers and links to App Studio</td>
+        <td>@smoke @authenticated @fts-35</td>
+      </tr>
+      <tr>
+        <td>The sidebar offers and links to Access Management</td>
+        <td>@smoke @authenticated @fts-35</td>
+      </tr>
+      <tr>
+        <td>The sidebar offers and links to Settings</td>
+        <td>@smoke @authenticated @fts-35</td>
+      </tr>
+      <tr>
+        <td>The profile shows the authenticated user identity</td>
+        <td>@smoke @authenticated @fts-33</td>
+      </tr>
+      <tr>
+        <td>The Change Password tab reveals its fields</td>
+        <td>@smoke @authenticated @fts-34</td>
+      </tr>
+      <tr>
+        <td>Create a dashboard, see it listed, then delete it</td>
+        <td>@e2e @authenticated @dashboard-cleanup @fts-21</td>
+      </tr>
+      <tr>
+        <td>The New Dashboard modal opens with its required fields</td>
+        <td>@authenticated @smoke @fts-16</td>
+      </tr>
+      <tr>
+        <td>Creating a dashboard requires a title and a description</td>
+        <td>@authenticated @fts-17</td>
+      </tr>
+      <tr>
+        <td>Design a widget view from a SQL query and publish it</td>
+        <td>@e2e @authenticated @design-cleanup @fts-23</td>
+      </tr>
+      <tr>
+        <td>The Design Wizard opens on its first step</td>
+        <td>@authenticated @smoke @fts-19</td>
+      </tr>
+      <tr>
+        <td>The Design Wizard requires its mandatory fields before continuing</td>
+        <td>@authenticated @fts-20</td>
+      </tr>
+      <tr>
+        <td>Widget Studio offers its three creation modules</td>
+        <td>@smoke @authenticated @fts-14</td>
+      </tr>
+      <tr>
+        <td>&quot;Create New&quot; opens the Dashboard creation surface</td>
+        <td>@smoke @authenticated @fts-15</td>
+      </tr>
+      <tr>
+        <td>&quot;Create New&quot; opens the Widget View creation surface</td>
+        <td>@smoke @authenticated @fts-15</td>
+      </tr>
+      <tr>
+        <td>&quot;Create New&quot; opens the Design View creation surface</td>
+        <td>@smoke @authenticated @fts-15</td>
+      </tr>
+      <tr>
+        <td>Creating a Widget view through the Add View panel succeeds</td>
+        <td>@e2e @authenticated @widget-cleanup @fts-22</td>
+      </tr>
+      <tr>
+        <td>The Add View panel opens with its core controls</td>
+        <td>@smoke @authenticated @fts-18</td>
       </tr>
     </tbody>
   </table>
@@ -230,6 +370,14 @@
   <table>
     <thead><tr><th>Date</th><th>Passed</th><th>Pass rate</th><th>Failed</th><th>Skipped</th><th></th></tr></thead>
     <tbody>
+      <tr>
+        <td>2026-09-06</td>
+        <td>4 / 80</td>
+        <td class="alert">5%</td>
+        <td>76</td>
+        <td>0</td>
+        <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/34036855163">View run</a></td>
+      </tr>
       <tr>
         <td>2026-09-04</td>
         <td>3 / 19</td>
