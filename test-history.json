@@ -4396,5 +4396,27 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-09-07T17:54:10.085Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/34147060027",
+    "total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Parse JSON given malformed input fails the run and skips the downstream action",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@e2e",
+          "@p0",
+          "@fts-123"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
