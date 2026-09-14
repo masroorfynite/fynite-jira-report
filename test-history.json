@@ -5987,5 +5987,56 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-09-14T16:23:04.302Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/34867491578",
+    "total": 40,
+    "passed": 35,
+    "failed": 5,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "The sidebar offers and links to Access Management",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-35"
+        ]
+      },
+      {
+        "name": "Design a widget view from a SQL query and publish it",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@design-cleanup",
+          "@fts-23"
+        ]
+      },
+      {
+        "name": "The Design Wizard opens on its first step",
+        "tags": [
+          "@authenticated",
+          "@smoke",
+          "@fts-19"
+        ]
+      },
+      {
+        "name": "The Design Wizard requires its mandatory fields before continuing",
+        "tags": [
+          "@authenticated",
+          "@fts-20"
+        ]
+      },
+      {
+        "name": "\"Create New\" opens the Design View creation surface",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-15"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
