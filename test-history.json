@@ -7107,5 +7107,38 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-09-16T13:07:07.231Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/35089793879",
+    "total": 22,
+    "passed": 20,
+    "failed": 2,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Switch nested directly inside a Condition generates a real Switch action",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-89"
+        ]
+      },
+      {
+        "name": "Filter array keeps only items matching the configured condition",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-101"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
