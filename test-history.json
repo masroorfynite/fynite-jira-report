@@ -7140,5 +7140,24 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-09-17T11:34:07.306Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/35215858255",
+    "total": 48,
+    "passed": 47,
+    "failed": 1,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "The sidebar offers and links to Access Management",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-35"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
