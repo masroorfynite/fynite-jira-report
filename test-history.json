@@ -8400,5 +8400,53 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-09-19T12:25:21.284Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/35438255006",
+    "total": 21,
+    "passed": 13,
+    "failed": 4,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "The designer boots with its core chrome and workflow graph",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-5"
+        ]
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@e2e",
+          "@fts-7"
+        ]
+      },
+      {
+        "name": "Gmail BYOA connection sends and receives a real email end-to-end",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-60"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
