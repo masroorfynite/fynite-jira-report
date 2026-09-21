@@ -8523,5 +8523,32 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-09-21T12:43:02.536Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/35600577117",
+    "total": 52,
+    "passed": 50,
+    "failed": 2,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Asset Management search filters the assets list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-44"
+        ]
+      },
+      {
+        "name": "The sidebar offers and links to Access Management",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-35"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
