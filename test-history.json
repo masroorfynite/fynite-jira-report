@@ -9597,5 +9597,24 @@
         "passed": false
       }
     ]
+  },
+  {
+    "date": "2026-09-23T11:27:44.655Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/35853968825",
+    "total": 63,
+    "passed": 62,
+    "failed": 1,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "\"Show only where action is needed\" filters the asset detail table",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-164"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
