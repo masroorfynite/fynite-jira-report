@@ -9773,5 +9773,32 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-09-24T11:40:28.867Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/35993680899",
+    "total": 63,
+    "passed": 61,
+    "failed": 2,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "\"Show only where action is needed\" filters the asset detail table",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-164"
+        ]
+      },
+      {
+        "name": "Asset Management search filters the assets list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-44"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
