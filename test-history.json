@@ -9800,5 +9800,110 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-09-24T13:33:59.701Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/35993680899",
+    "total": 21,
+    "passed": 8,
+    "failed": 9,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "The designer boots with its core chrome and workflow graph",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-5"
+        ]
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@e2e",
+          "@fts-7"
+        ]
+      },
+      {
+        "name": "Gmail BYOA connection sends and receives a real email end-to-end",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-60"
+        ]
+      },
+      {
+        "name": "Gmail List Messages builds, publishes and runs with real inbox output",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-91"
+        ]
+      },
+      {
+        "name": "Gmail Send Email (standalone, no nesting) delivers a real message",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-112"
+        ]
+      },
+      {
+        "name": "Parse JSON given malformed input fails the run and skips the downstream action",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@e2e",
+          "@p0",
+          "@fts-123"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      },
+      {
+        "name": "Slack Get Channel Messages reads back a message from the configured channel",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-108"
+        ]
+      },
+      {
+        "name": "Slack Send Message builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-51"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
