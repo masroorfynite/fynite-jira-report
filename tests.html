@@ -33,15 +33,15 @@
 </head>
 <body>
   <h1>Fynite QA &mdash; Daily Test Run History</h1>
-  <div class="date">Auto-updated after each daily run &middot; Last regenerated September 24, 2026 13:34 UTC</div>
+  <div class="date">Auto-updated after each daily run &middot; Last regenerated September 24, 2026 13:46 UTC</div>
 
   
     <div class="stats">
       <div class="stat"><div class="stat-label">Latest run</div><div class="stat-value">2026-09-24</div></div>
-      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">8 / 21</div></div>
-      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value alert">47%</div></div>
-      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value alert">9</div></div>
-      <div class="stat"><div class="stat-label">Skipped</div><div class="stat-value alert">4</div></div>
+      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">12 / 22</div></div>
+      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value alert">55%</div></div>
+      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value alert">10</div></div>
+      <div class="stat"><div class="stat-label">Skipped</div><div class="stat-value ok">0</div></div>
     </div>
     <p class="section-note"><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/35993680899">View this run on GitHub Actions &rarr;</a></p>
 
@@ -60,40 +60,44 @@
     <thead><tr><th>Scenario</th><th>Tags</th></tr></thead>
     <tbody>
       <tr>
-        <td>The designer boots with its core chrome and workflow graph</td>
-        <td>@smoke @authenticated @fts-5</td>
+        <td>Compose action builds, publishes and runs</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-8</td>
       </tr>
       <tr>
-        <td>Run History opens and renders its grid</td>
-        <td>@smoke @authenticated @e2e @fts-7</td>
+        <td>For Each processes items with a nested Condition block</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-66</td>
       </tr>
       <tr>
-        <td>Gmail BYOA connection sends and receives a real email end-to-end</td>
-        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-60</td>
+        <td>Switch nested directly inside a Condition generates a real Switch action</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-89</td>
       </tr>
       <tr>
-        <td>Gmail List Messages builds, publishes and runs with real inbox output</td>
-        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-91</td>
+        <td>Formulator Callback passes the provided JSON body through to Switch routing</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-98 @slack</td>
       </tr>
       <tr>
-        <td>Gmail Send Email (standalone, no nesting) delivers a real message</td>
-        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-112</td>
+        <td>Terminate action ends the run with a custom status and message</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-100</td>
       </tr>
       <tr>
-        <td>Parse JSON given malformed input fails the run and skips the downstream action</td>
-        <td>@authenticated @workflow-cleanup @nodes @e2e @p0 @fts-123</td>
+        <td>Filter array keeps only items matching the configured condition</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-101</td>
       </tr>
       <tr>
-        <td>Running the qa-smoke-auto fixture produces a successful run</td>
-        <td>@e2e @p0 @authenticated @fts-12</td>
+        <td>AI Agent output routes through a Switch by classification result</td>
+        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-117</td>
       </tr>
       <tr>
-        <td>Slack Get Channel Messages reads back a message from the configured channel</td>
-        <td>@authenticated @workflow-cleanup @slack @e2e @p0 @nodes @fts-108</td>
+        <td>Build a Recurrence + JavaScript workflow, publish, run and verify</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @fts-13</td>
       </tr>
       <tr>
-        <td>Slack Send Message builds, publishes and runs to a successful run</td>
-        <td>@authenticated @workflow-cleanup @slack @e2e @p0 @nodes @fts-51</td>
+        <td>Condition evaluates a combined AND/OR expression correctly</td>
+        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-121</td>
+      </tr>
+      <tr>
+        <td>Creating an Agent workflow opens the designer</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @fts-11</td>
       </tr>
     </tbody>
   </table>
@@ -102,6 +106,14 @@
   <table>
     <thead><tr><th>Date</th><th>Passed</th><th>Pass rate</th><th>Failed</th><th>Skipped</th><th></th></tr></thead>
     <tbody>
+      <tr>
+        <td>2026-09-24</td>
+        <td>12 / 22</td>
+        <td class="alert">55%</td>
+        <td>10</td>
+        <td>0</td>
+        <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/35993680899">View run</a></td>
+      </tr>
       <tr>
         <td>2026-09-24</td>
         <td>8 / 21</td>
@@ -333,14 +345,6 @@
         <td>1</td>
         <td>0</td>
         <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/35215858255">View run</a></td>
-      </tr>
-      <tr>
-        <td>2026-09-16</td>
-        <td>20 / 22</td>
-        <td class="alert">91%</td>
-        <td>2</td>
-        <td>0</td>
-        <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/35089793879">View run</a></td>
       </tr>
     </tbody>
   </table>
