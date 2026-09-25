@@ -10118,5 +10118,136 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-09-25T13:52:26.419Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/36130589523",
+    "total": 22,
+    "passed": 11,
+    "failed": 11,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Switch is available as a nested action inside For Each",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-67"
+        ]
+      },
+      {
+        "name": "AI Agent output feeds correctly into a downstream Condition block",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-70"
+        ]
+      },
+      {
+        "name": "Switch nested directly inside a Condition generates a real Switch action",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-89"
+        ]
+      },
+      {
+        "name": "Gmail Send Email succeeds inside a Condition block with a static body",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-97"
+        ]
+      },
+      {
+        "name": "Formulator Callback passes the provided JSON body through to Switch routing",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-98",
+          "@slack"
+        ]
+      },
+      {
+        "name": "Terminate action ends the run with a custom status and message",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-100"
+        ]
+      },
+      {
+        "name": "Filter array keeps only items matching the configured condition",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-101"
+        ]
+      },
+      {
+        "name": "AI Agent output routes through a Switch by classification result",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-117"
+        ]
+      },
+      {
+        "name": "Build a Recurrence + JavaScript workflow, publish, run and verify",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@fts-13"
+        ]
+      },
+      {
+        "name": "Condition evaluates a combined AND/OR expression correctly",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-121"
+        ]
+      },
+      {
+        "name": "Creating an Agent workflow opens the designer",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@fts-11"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
