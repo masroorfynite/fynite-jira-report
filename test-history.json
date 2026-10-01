@@ -11505,5 +11505,24 @@
     "skipped": 0,
     "failures": [],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-01T13:09:26.978Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/36865395545",
+    "total": 69,
+    "passed": 68,
+    "failed": 1,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Asset Management search filters the assets list",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-44"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
