@@ -12253,5 +12253,108 @@
     "skipped": 0,
     "failures": [],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-03T13:32:27.871Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37119879609",
+    "total": 21,
+    "passed": 8,
+    "failed": 9,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "AI Agent builds and publishes",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-39"
+        ]
+      },
+      {
+        "name": "AI Agent configuration persists across a reload",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@fts-40"
+        ]
+      },
+      {
+        "name": "A new AI Agent is bound to the Azure OpenAI model",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@nodes",
+          "@fts-41"
+        ]
+      },
+      {
+        "name": "AI Agent builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@nodes",
+          "@fts-42"
+        ]
+      },
+      {
+        "name": "The designer boots with its core chrome and workflow graph",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-5"
+        ]
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@e2e",
+          "@fts-7"
+        ]
+      },
+      {
+        "name": "Gmail BYOA connection sends and receives a real email end-to-end",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-60"
+        ]
+      },
+      {
+        "name": "Parse JSON given malformed input fails the run and skips the downstream action",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@e2e",
+          "@p0",
+          "@fts-123"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
