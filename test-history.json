@@ -12846,5 +12846,25 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-05T17:28:49.427Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37346851685",
+    "total": 71,
+    "passed": 70,
+    "failed": 1,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Create a dashboard, see it listed, then delete it",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@dashboard-cleanup",
+          "@fts-21"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
