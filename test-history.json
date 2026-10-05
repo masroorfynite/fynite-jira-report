@@ -12866,5 +12866,97 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-05T17:49:55.165Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37346851685",
+    "total": 17,
+    "passed": 5,
+    "failed": 8,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "AI Agent configuration persists across a reload",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@fts-40"
+        ]
+      },
+      {
+        "name": "A new AI Agent is bound to the Azure OpenAI model",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@nodes",
+          "@fts-41"
+        ]
+      },
+      {
+        "name": "AI Agent builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@nodes",
+          "@fts-42"
+        ]
+      },
+      {
+        "name": "Delay action respects the configured Count and Unit",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-82"
+        ]
+      },
+      {
+        "name": "The designer boots with its core chrome and workflow graph",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-5"
+        ]
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@e2e",
+          "@fts-7"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      },
+      {
+        "name": "File Shared trigger gets a new Succeeded run carrying the real uploaded file's id",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@requires-slack-user-token",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-71"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
