@@ -12991,5 +12991,60 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-05T18:01:47.849Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37346851685",
+    "total": 13,
+    "passed": 9,
+    "failed": 4,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "AI Agent output feeds correctly into a downstream Condition block",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-70"
+        ]
+      },
+      {
+        "name": "Filter array keeps only items matching the configured condition",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-101"
+        ]
+      },
+      {
+        "name": "AI Agent output routes through a Switch by classification result",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-117"
+        ]
+      },
+      {
+        "name": "Gmail BYOA connection sends and receives a real email end-to-end",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-60"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
