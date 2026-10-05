@@ -12958,5 +12958,38 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-05T17:50:59.243Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37346851685",
+    "total": 14,
+    "passed": 12,
+    "failed": 2,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "AI Agent executes a prompt mapped from the trigger body",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-65"
+        ]
+      },
+      {
+        "name": "AI Agent action completes end-to-end via Formulator Callback",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-50"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
