@@ -13056,5 +13056,128 @@
     "skipped": 0,
     "failures": [],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-05T19:42:33.062Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37363144104",
+    "total": 14,
+    "passed": 4,
+    "failed": 10,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Compose action builds, publishes and runs",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-8"
+        ]
+      },
+      {
+        "name": "Select action transforms each array item using its key-value mapping",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-85"
+        ]
+      },
+      {
+        "name": "AI Agent executes a prompt mapped from the trigger body",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-65"
+        ]
+      },
+      {
+        "name": "AI Agent action completes end-to-end via Formulator Callback",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-50"
+        ]
+      },
+      {
+        "name": "Condition block routes to its TRUE branch and runs the branch action",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-64",
+          "@slack"
+        ]
+      },
+      {
+        "name": "Slack Send Message inside a Condition block maps dynamic values correctly",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-68",
+          "@slack"
+        ]
+      },
+      {
+        "name": "Gmail Get Message builds, publishes and runs with the real message ID from List Messages",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-92"
+        ]
+      },
+      {
+        "name": "Gmail Get Message correctly receives a dynamic message_id from Gmail List Messages via Compose",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-94"
+        ]
+      },
+      {
+        "name": "Gmail List Messages builds, publishes and runs with real inbox output",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-91"
+        ]
+      },
+      {
+        "name": "Gmail Send Email (standalone, no nesting) delivers a real message",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-112"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
