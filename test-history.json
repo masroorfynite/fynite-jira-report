@@ -13333,5 +13333,57 @@
     "skipped": 0,
     "failures": [],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-06T13:42:29.567Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37468843785",
+    "total": 18,
+    "passed": 10,
+    "failed": 4,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "AI Agent builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@ai-agent",
+          "@e2e",
+          "@nodes",
+          "@fts-42"
+        ]
+      },
+      {
+        "name": "The designer boots with its core chrome and workflow graph",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-5"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      },
+      {
+        "name": "File Shared trigger gets a new Succeeded run carrying the real uploaded file's id",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@requires-slack-user-token",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-71"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
