@@ -13385,5 +13385,49 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-06T13:47:30.405Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37468843785",
+    "total": 14,
+    "passed": 11,
+    "failed": 3,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "AI Agent executes a prompt mapped from the trigger body",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-65"
+        ]
+      },
+      {
+        "name": "AI Agent action completes end-to-end via Formulator Callback",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-50"
+        ]
+      },
+      {
+        "name": "Gmail Get Message builds, publishes and runs with the real message ID from List Messages",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-92"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
