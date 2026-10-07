@@ -13603,5 +13603,60 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-07T13:57:59.927Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37626153851",
+    "total": 14,
+    "passed": 10,
+    "failed": 4,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Parse JSON action builds, publishes and runs",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-10"
+        ]
+      },
+      {
+        "name": "Parse JSON action saves and maps the configured Content field",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-84"
+        ]
+      },
+      {
+        "name": "AI Agent executes a prompt mapped from the trigger body",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-65"
+        ]
+      },
+      {
+        "name": "AI Agent action completes end-to-end via Formulator Callback",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-50"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
