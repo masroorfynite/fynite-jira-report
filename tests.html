@@ -33,15 +33,15 @@
 </head>
 <body>
   <h1>Fynite QA &mdash; Daily Test Run History</h1>
-  <div class="date">Auto-updated after each daily run &middot; Last regenerated October 07, 2026 13:21 UTC</div>
+  <div class="date">Auto-updated after each daily run &middot; Last regenerated October 07, 2026 13:53 UTC</div>
 
   
     <div class="stats">
       <div class="stat"><div class="stat-label">Latest run</div><div class="stat-value">2026-10-07</div></div>
-      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">76 / 76</div></div>
-      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value ok">100%</div></div>
-      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value ok">0</div></div>
-      <div class="stat"><div class="stat-label">Skipped</div><div class="stat-value ok">0</div></div>
+      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">10 / 18</div></div>
+      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value alert">71%</div></div>
+      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value alert">4</div></div>
+      <div class="stat"><div class="stat-label">Skipped</div><div class="stat-value alert">4</div></div>
     </div>
     <p class="section-note"><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37626153851">View this run on GitHub Actions &rarr;</a></p>
 
@@ -58,7 +58,23 @@
   <h2>Latest run &mdash; failures</h2>
   <table>
     <thead><tr><th>Scenario</th><th>Tags</th></tr></thead>
-    <tbody><tr><td colspan="2">No failures in the latest run.</td></tr>
+    <tbody>
+      <tr>
+        <td>AI Agent builds, publishes and runs to a successful run</td>
+        <td>@authenticated @workflow-cleanup @ai-agent @e2e @nodes @fts-42</td>
+      </tr>
+      <tr>
+        <td>HTTP action against an unreachable URL fails the run and surfaces the error</td>
+        <td>@authenticated @workflow-cleanup @nodes @e2e @fts-124</td>
+      </tr>
+      <tr>
+        <td>Running the qa-smoke-auto fixture produces a successful run</td>
+        <td>@e2e @p0 @authenticated @fts-12</td>
+      </tr>
+      <tr>
+        <td>File Shared trigger gets a new Succeeded run carrying the real uploaded file&#x27;s id</td>
+        <td>@authenticated @workflow-cleanup @slack @requires-slack-user-token @e2e @p0 @nodes @fts-71</td>
+      </tr>
     </tbody>
   </table>
 
@@ -66,6 +82,14 @@
   <table>
     <thead><tr><th>Date</th><th>Passed</th><th>Pass rate</th><th>Failed</th><th>Skipped</th><th></th></tr></thead>
     <tbody>
+      <tr>
+        <td>2026-10-07</td>
+        <td>10 / 18</td>
+        <td class="alert">71%</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37626153851">View run</a></td>
+      </tr>
       <tr>
         <td>2026-10-07</td>
         <td>76 / 76</td>
@@ -296,14 +320,6 @@
         <td class="alert">18%</td>
         <td>14</td>
         <td>4</td>
-        <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/36714387469">View run</a></td>
-      </tr>
-      <tr>
-        <td>2026-09-30</td>
-        <td>68 / 68</td>
-        <td class="ok">100%</td>
-        <td>0</td>
-        <td>0</td>
         <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/36714387469">View run</a></td>
       </tr>
     </tbody>
