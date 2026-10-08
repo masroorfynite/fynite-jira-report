@@ -13760,5 +13760,103 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-08T13:44:25.741Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37782951934",
+    "total": 11,
+    "passed": 3,
+    "failed": 8,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Gmail Send Email succeeds inside a Condition block with a static body",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-97"
+        ]
+      },
+      {
+        "name": "Formulator Callback passes the provided JSON body through to Switch routing",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-98",
+          "@slack"
+        ]
+      },
+      {
+        "name": "Terminate action ends the run with a custom status and message",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-100"
+        ]
+      },
+      {
+        "name": "Filter array keeps only items matching the configured condition",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-101"
+        ]
+      },
+      {
+        "name": "Build a Recurrence + JavaScript workflow, publish, run and verify",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@fts-13"
+        ]
+      },
+      {
+        "name": "Condition evaluates a combined AND/OR expression correctly",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-121"
+        ]
+      },
+      {
+        "name": "Creating an Agent workflow opens the designer",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@fts-11"
+        ]
+      },
+      {
+        "name": "Gmail BYOA connection sends and receives a real email end-to-end",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-60"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
