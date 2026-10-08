@@ -13658,5 +13658,107 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-08T13:40:10.281Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37782951934",
+    "total": 78,
+    "passed": 67,
+    "failed": 11,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Select-all on Connections selects the current page and reveals bulk Actions",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-160"
+        ]
+      },
+      {
+        "name": "Platform filter narrows the connector catalogue",
+        "tags": [
+          "@authenticated",
+          "@fts-161"
+        ]
+      },
+      {
+        "name": "Table Details pre-fills the query with the real table",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@fts-185"
+        ]
+      },
+      {
+        "name": "An invalid query surfaces a query error",
+        "tags": [
+          "@authenticated",
+          "@e2e",
+          "@fts-26"
+        ]
+      },
+      {
+        "name": "Grid View renders every record of a full results page",
+        "tags": [
+          "@authenticated",
+          "@e2e",
+          "@fts-186"
+        ]
+      },
+      {
+        "name": "Table 1 stays closed until Schema 1 is chosen, then populates",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@fts-183"
+        ]
+      },
+      {
+        "name": "The Change Password tab reveals its fields",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-34"
+        ]
+      },
+      {
+        "name": "Create a dashboard, see it listed, then delete it",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@dashboard-cleanup",
+          "@fts-21"
+        ]
+      },
+      {
+        "name": "Design a widget view from a SQL query and publish it",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@design-cleanup",
+          "@fts-23"
+        ]
+      },
+      {
+        "name": "A published widget-app loads its data",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@design-cleanup",
+          "@fts-188"
+        ]
+      },
+      {
+        "name": "Creating a Widget view through the Add View panel succeeds",
+        "tags": [
+          "@e2e",
+          "@authenticated",
+          "@widget-cleanup",
+          "@fts-22"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
