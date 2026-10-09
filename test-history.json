@@ -14052,5 +14052,49 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-09T13:49:45.168Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37934062898",
+    "total": 11,
+    "passed": 8,
+    "failed": 3,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Gmail Send Email succeeds inside a Condition block with a static body",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-97"
+        ]
+      },
+      {
+        "name": "Filter array keeps only items matching the configured condition",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-101"
+        ]
+      },
+      {
+        "name": "Gmail BYOA connection sends and receives a real email end-to-end",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-60"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
