@@ -33,14 +33,14 @@
 </head>
 <body>
   <h1>Fynite QA &mdash; Daily Test Run History</h1>
-  <div class="date">Auto-updated after each daily run &middot; Last regenerated October 09, 2026 13:49 UTC</div>
+  <div class="date">Auto-updated after each daily run &middot; Last regenerated October 09, 2026 13:51 UTC</div>
 
   
     <div class="stats">
       <div class="stat"><div class="stat-label">Latest run</div><div class="stat-value">2026-10-09</div></div>
-      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">8 / 11</div></div>
-      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value alert">73%</div></div>
-      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value alert">3</div></div>
+      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">8 / 12</div></div>
+      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value alert">67%</div></div>
+      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value alert">4</div></div>
       <div class="stat"><div class="stat-label">Skipped</div><div class="stat-value ok">0</div></div>
     </div>
     <p class="section-note"><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37934062898">View this run on GitHub Actions &rarr;</a></p>
@@ -60,16 +60,20 @@
     <thead><tr><th>Scenario</th><th>Tags</th></tr></thead>
     <tbody>
       <tr>
-        <td>Gmail Send Email succeeds inside a Condition block with a static body</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-97</td>
+        <td>Parse JSON action saves and maps the configured Content field</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-84</td>
       </tr>
       <tr>
-        <td>Filter array keeps only items matching the configured condition</td>
-        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-101</td>
+        <td>Chunk Text (size-based) splits input text into bounded chunks</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-102</td>
       </tr>
       <tr>
-        <td>Gmail BYOA connection sends and receives a real email end-to-end</td>
-        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-60</td>
+        <td>Condition block routes to its TRUE branch and runs the branch action</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-64 @slack</td>
+      </tr>
+      <tr>
+        <td>Gmail Send Email (standalone, no nesting) delivers a real message</td>
+        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-112</td>
       </tr>
     </tbody>
   </table>
@@ -78,6 +82,14 @@
   <table>
     <thead><tr><th>Date</th><th>Passed</th><th>Pass rate</th><th>Failed</th><th>Skipped</th><th></th></tr></thead>
     <tbody>
+      <tr>
+        <td>2026-10-09</td>
+        <td>8 / 12</td>
+        <td class="alert">67%</td>
+        <td>4</td>
+        <td>0</td>
+        <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37934062898">View run</a></td>
+      </tr>
       <tr>
         <td>2026-10-09</td>
         <td>8 / 11</td>
@@ -308,14 +320,6 @@
         <td class="alert">18%</td>
         <td>18</td>
         <td>0</td>
-        <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37006124072">View run</a></td>
-      </tr>
-      <tr>
-        <td>2026-10-02</td>
-        <td>3 / 21</td>
-        <td class="alert">18%</td>
-        <td>14</td>
-        <td>4</td>
         <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37006124072">View run</a></td>
       </tr>
     </tbody>
