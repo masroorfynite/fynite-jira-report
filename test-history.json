@@ -14096,5 +14096,61 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-09T13:51:27.734Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37934062898",
+    "total": 12,
+    "passed": 8,
+    "failed": 4,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Parse JSON action saves and maps the configured Content field",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-84"
+        ]
+      },
+      {
+        "name": "Chunk Text (size-based) splits input text into bounded chunks",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-102"
+        ]
+      },
+      {
+        "name": "Condition block routes to its TRUE branch and runs the branch action",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-64",
+          "@slack"
+        ]
+      },
+      {
+        "name": "Gmail Send Email (standalone, no nesting) delivers a real message",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-112"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
