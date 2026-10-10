@@ -14152,5 +14152,24 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-10T12:33:35.692Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/38051527764",
+    "total": 78,
+    "passed": 77,
+    "failed": 1,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Select-all on Connections selects the current page and reveals bulk Actions",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-160"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
