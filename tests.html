@@ -33,15 +33,15 @@
 </head>
 <body>
   <h1>Fynite QA &mdash; Daily Test Run History</h1>
-  <div class="date">Auto-updated after each daily run &middot; Last regenerated October 10, 2026 12:55 UTC</div>
+  <div class="date">Auto-updated after each daily run &middot; Last regenerated October 10, 2026 12:57 UTC</div>
 
   
     <div class="stats">
       <div class="stat"><div class="stat-label">Latest run</div><div class="stat-value">2026-10-10</div></div>
-      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">10 / 17</div></div>
-      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value alert">77%</div></div>
-      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value alert">3</div></div>
-      <div class="stat"><div class="stat-label">Skipped</div><div class="stat-value alert">4</div></div>
+      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">7 / 11</div></div>
+      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value alert">64%</div></div>
+      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value alert">4</div></div>
+      <div class="stat"><div class="stat-label">Skipped</div><div class="stat-value ok">0</div></div>
     </div>
     <p class="section-note"><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/38051527764">View this run on GitHub Actions &rarr;</a></p>
 
@@ -60,16 +60,20 @@
     <thead><tr><th>Scenario</th><th>Tags</th></tr></thead>
     <tbody>
       <tr>
-        <td>HTTP action against an unreachable URL fails the run and surfaces the error</td>
-        <td>@authenticated @workflow-cleanup @nodes @e2e @fts-124</td>
+        <td>For Each processes items with a nested Condition block</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-66</td>
       </tr>
       <tr>
-        <td>Running the qa-smoke-auto fixture produces a successful run</td>
-        <td>@e2e @p0 @authenticated @fts-12</td>
+        <td>Gmail Send Email succeeds inside a Condition block with a static body</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-97</td>
       </tr>
       <tr>
-        <td>File Shared trigger gets a new Succeeded run carrying the real uploaded file&#x27;s id</td>
-        <td>@authenticated @workflow-cleanup @slack @requires-slack-user-token @e2e @p0 @nodes @fts-71</td>
+        <td>Terminate action ends the run with a custom status and message</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-100</td>
+      </tr>
+      <tr>
+        <td>Gmail BYOA connection sends and receives a real email end-to-end</td>
+        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-60</td>
       </tr>
     </tbody>
   </table>
@@ -78,6 +82,14 @@
   <table>
     <thead><tr><th>Date</th><th>Passed</th><th>Pass rate</th><th>Failed</th><th>Skipped</th><th></th></tr></thead>
     <tbody>
+      <tr>
+        <td>2026-10-10</td>
+        <td>7 / 11</td>
+        <td class="alert">64%</td>
+        <td>4</td>
+        <td>0</td>
+        <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/38051527764">View run</a></td>
+      </tr>
       <tr>
         <td>2026-10-10</td>
         <td>10 / 17</td>
@@ -308,14 +320,6 @@
         <td class="alert">41%</td>
         <td>13</td>
         <td>0</td>
-        <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37119879609">View run</a></td>
-      </tr>
-      <tr>
-        <td>2026-10-03</td>
-        <td>8 / 21</td>
-        <td class="alert">47%</td>
-        <td>9</td>
-        <td>4</td>
         <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37119879609">View run</a></td>
       </tr>
     </tbody>
