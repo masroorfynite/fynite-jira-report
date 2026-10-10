@@ -14269,5 +14269,49 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-10T13:08:18.374Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/38051527764",
+    "total": 12,
+    "passed": 9,
+    "failed": 3,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Parse JSON action builds, publishes and runs",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-10"
+        ]
+      },
+      {
+        "name": "Parse JSON action saves and maps the configured Content field",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-84"
+        ]
+      },
+      {
+        "name": "Chunk Text (size-based) splits input text into bounded chunks",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-102"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
