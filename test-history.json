@@ -14323,5 +14323,61 @@
     "skipped": 0,
     "failures": [],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-11T13:18:05.919Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/38139865525",
+    "total": 12,
+    "passed": 8,
+    "failed": 4,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Delay action builds, publishes and runs",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-9"
+        ]
+      },
+      {
+        "name": "Condition block routes to its TRUE branch and runs the branch action",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-64",
+          "@slack"
+        ]
+      },
+      {
+        "name": "Gmail Get Message builds, publishes and runs with the real message ID from List Messages",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-92"
+        ]
+      },
+      {
+        "name": "Gmail Get Message correctly receives a dynamic message_id from Gmail List Messages via Compose",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-94"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
