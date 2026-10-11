@@ -14379,5 +14379,59 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-11T13:18:16.978Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/38139865525",
+    "total": 17,
+    "passed": 9,
+    "failed": 4,
+    "skipped": 4,
+    "failures": [
+      {
+        "name": "HTTP action against an unreachable URL fails the run and surfaces the error",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@e2e",
+          "@fts-124"
+        ]
+      },
+      {
+        "name": "Parse JSON given malformed input fails the run and skips the downstream action",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@e2e",
+          "@p0",
+          "@fts-123"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      },
+      {
+        "name": "File Shared trigger gets a new Succeeded run carrying the real uploaded file's id",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@requires-slack-user-token",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-71"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
