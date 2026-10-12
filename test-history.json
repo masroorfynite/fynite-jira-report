@@ -14642,5 +14642,50 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-12T15:59:58.611Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/38268111131",
+    "total": 11,
+    "passed": 8,
+    "failed": 3,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Gmail Send Email succeeds inside a Condition block with a static body",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-97"
+        ]
+      },
+      {
+        "name": "Formulator Callback passes the provided JSON body through to Switch routing",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-98",
+          "@slack"
+        ]
+      },
+      {
+        "name": "Gmail BYOA connection sends and receives a real email end-to-end",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-60"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
