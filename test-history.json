@@ -14520,5 +14520,38 @@
     "skipped": 0,
     "failures": [],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-12T15:50:40.648Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/38268111131",
+    "total": 12,
+    "passed": 10,
+    "failed": 2,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Parse JSON action builds, publishes and runs",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-10"
+        ]
+      },
+      {
+        "name": "Gmail Get Message correctly receives a dynamic message_id from Gmail List Messages via Compose",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-94"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
