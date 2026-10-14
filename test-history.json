@@ -14894,5 +14894,125 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-14T12:24:51.555Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/38557959424",
+    "total": 17,
+    "passed": 7,
+    "failed": 10,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "The designer boots with its core chrome and workflow graph",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@fts-5"
+        ]
+      },
+      {
+        "name": "Run History opens and renders its grid",
+        "tags": [
+          "@smoke",
+          "@authenticated",
+          "@e2e",
+          "@fts-7"
+        ]
+      },
+      {
+        "name": "HTTP action against an unreachable URL fails the run and surfaces the error",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@e2e",
+          "@fts-124"
+        ]
+      },
+      {
+        "name": "Listener workflow gets a new Succeeded run after the sender sends a real email",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@outlook",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-57"
+        ]
+      },
+      {
+        "name": "Outlook Send an email builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@outlook",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-56"
+        ]
+      },
+      {
+        "name": "Running the qa-smoke-auto fixture produces a successful run",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@fts-12"
+        ]
+      },
+      {
+        "name": "File Shared trigger gets a new Succeeded run carrying the real uploaded file's id",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@requires-slack-user-token",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-71"
+        ]
+      },
+      {
+        "name": "Slack Send Message builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@slack",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-51"
+        ]
+      },
+      {
+        "name": "Listener workflow gets a new Succeeded run after the sender posts a real Teams message",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@teams",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-55"
+        ]
+      },
+      {
+        "name": "Teams Post message in a chat or channel builds, publishes and runs to a successful run",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@teams",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-54"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
