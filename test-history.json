@@ -14795,5 +14795,48 @@
     "skipped": 0,
     "failures": [],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-14T12:24:05.557Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/38557959424",
+    "total": 11,
+    "passed": 8,
+    "failed": 3,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Gmail Send Email succeeds inside a Condition block with a static body",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-97"
+        ]
+      },
+      {
+        "name": "Build a Recurrence + JavaScript workflow, publish, run and verify",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@fts-13"
+        ]
+      },
+      {
+        "name": "Gmail BYOA connection sends and receives a real email end-to-end",
+        "tags": [
+          "@authenticated",
+          "@workflow-cleanup",
+          "@e2e",
+          "@p0",
+          "@nodes",
+          "@fts-60"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
