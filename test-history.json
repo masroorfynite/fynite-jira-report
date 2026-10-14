@@ -14838,5 +14838,61 @@
       }
     ],
     "knownBugs": []
+  },
+  {
+    "date": "2026-10-14T12:24:21.077Z",
+    "runUrl": "https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/38557959424",
+    "total": 12,
+    "passed": 8,
+    "failed": 4,
+    "skipped": 0,
+    "failures": [
+      {
+        "name": "Compose action builds, publishes and runs",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-8"
+        ]
+      },
+      {
+        "name": "Delay action builds, publishes and runs",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-9"
+        ]
+      },
+      {
+        "name": "Parse JSON action saves and maps the configured Content field",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-84"
+        ]
+      },
+      {
+        "name": "Condition block routes to its TRUE branch and runs the branch action",
+        "tags": [
+          "@e2e",
+          "@p0",
+          "@authenticated",
+          "@workflow-cleanup",
+          "@nodes",
+          "@fts-64",
+          "@slack"
+        ]
+      }
+    ],
+    "knownBugs": []
   }
 ]
