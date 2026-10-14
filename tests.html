@@ -33,14 +33,14 @@
 </head>
 <body>
   <h1>Fynite QA &mdash; Daily Test Run History</h1>
-  <div class="date">Auto-updated after each daily run &middot; Last regenerated October 14, 2026 11:52 UTC</div>
+  <div class="date">Auto-updated after each daily run &middot; Last regenerated October 14, 2026 12:24 UTC</div>
 
   
     <div class="stats">
       <div class="stat"><div class="stat-label">Latest run</div><div class="stat-value">2026-10-14</div></div>
-      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">78 / 78</div></div>
-      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value ok">100%</div></div>
-      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value ok">0</div></div>
+      <div class="stat"><div class="stat-label">Passed</div><div class="stat-value ok">8 / 11</div></div>
+      <div class="stat"><div class="stat-label">Pass rate</div><div class="stat-value alert">73%</div></div>
+      <div class="stat"><div class="stat-label">Failed</div><div class="stat-value alert">3</div></div>
       <div class="stat"><div class="stat-label">Skipped</div><div class="stat-value ok">0</div></div>
     </div>
     <p class="section-note"><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/38557959424">View this run on GitHub Actions &rarr;</a></p>
@@ -58,7 +58,19 @@
   <h2>Latest run &mdash; failures</h2>
   <table>
     <thead><tr><th>Scenario</th><th>Tags</th></tr></thead>
-    <tbody><tr><td colspan="2">No failures in the latest run.</td></tr>
+    <tbody>
+      <tr>
+        <td>Gmail Send Email succeeds inside a Condition block with a static body</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @nodes @fts-97</td>
+      </tr>
+      <tr>
+        <td>Build a Recurrence + JavaScript workflow, publish, run and verify</td>
+        <td>@e2e @p0 @authenticated @workflow-cleanup @fts-13</td>
+      </tr>
+      <tr>
+        <td>Gmail BYOA connection sends and receives a real email end-to-end</td>
+        <td>@authenticated @workflow-cleanup @e2e @p0 @nodes @fts-60</td>
+      </tr>
     </tbody>
   </table>
 
@@ -66,6 +78,14 @@
   <table>
     <thead><tr><th>Date</th><th>Passed</th><th>Pass rate</th><th>Failed</th><th>Skipped</th><th></th></tr></thead>
     <tbody>
+      <tr>
+        <td>2026-10-14</td>
+        <td>8 / 11</td>
+        <td class="alert">73%</td>
+        <td>3</td>
+        <td>0</td>
+        <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/38557959424">View run</a></td>
+      </tr>
       <tr>
         <td>2026-10-14</td>
         <td>78 / 78</td>
@@ -296,14 +316,6 @@
         <td class="alert">79%</td>
         <td>3</td>
         <td>0</td>
-        <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37468843785">View run</a></td>
-      </tr>
-      <tr>
-        <td>2026-10-06</td>
-        <td>10 / 18</td>
-        <td class="alert">71%</td>
-        <td>4</td>
-        <td>4</td>
         <td><a href="https://github.com/masroorfynite/fynite-playwright-automation/actions/runs/37468843785">View run</a></td>
       </tr>
     </tbody>
